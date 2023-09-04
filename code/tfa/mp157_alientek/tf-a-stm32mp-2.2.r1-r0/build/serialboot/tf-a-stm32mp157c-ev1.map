@@ -1,0 +1,69 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+HEADER           0x0000000000000000 0x0000000000003000 rw
+RAM              0x000000002ffc2500 0x000000000003cb00 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.glue_7         0x0000000000000000        0x0
+ .glue_7        0x0000000000000000        0x0 linker stubs
+
+.glue_7t        0x0000000000000000        0x0
+ .glue_7t       0x0000000000000000        0x0 linker stubs
+
+.vfp11_veneer   0x0000000000000000        0x0
+ .vfp11_veneer  0x0000000000000000        0x0 linker stubs
+
+.v4_bx          0x0000000000000000        0x0
+ .v4_bx         0x0000000000000000        0x0 linker stubs
+
+.text           0x0000000000000000        0x0
+ .text          0x0000000000000000        0x0 /home/charles/linux/code/tfa/mp157_alientek/tf-a-stm32mp-2.2.r1-r0/tf-a-stm32mp-2.2.r1/../build/serialboot/stm32mp1.o
+
+.header         0x0000000000000000        0x0
+                0x0000000000000000                __HEADER_START__ = .
+ *(.header)
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                __HEADER_END__ = .
+                0x000000002ffc2500                . = 0x2ffc2500
+
+.data           0x000000002ffc2500    0x3b040
+                0x000000002ffc3000                . = ALIGN (0x1000)
+ *fill*         0x000000002ffc2500      0xb00 
+                0x000000002ffc3000                __DATA_START__ = .
+ *(.data*)
+ .data          0x000000002ffc3000        0x0 /home/charles/linux/code/tfa/mp157_alientek/tf-a-stm32mp-2.2.r1-r0/tf-a-stm32mp-2.2.r1/../build/serialboot/stm32mp1.o
+                0x0000000000009b00                . = 0x9b00
+ *fill*         0x000000002ffc3000     0x9000 
+                0x000000002ffcc000                __DTB_IMAGE_START__ = .
+ *(.dtb_image*)
+ .dtb_image     0x000000002ffcc000     0x58bc /home/charles/linux/code/tfa/mp157_alientek/tf-a-stm32mp-2.2.r1-r0/tf-a-stm32mp-2.2.r1/../build/serialboot/stm32mp1.o
+                0x000000002ffd18bc                __DTB_IMAGE_END__ = .
+                0x0000000000013b00                . = 0x13b00
+ *fill*         0x000000002ffd18bc     0x4744 
+                0x000000002ffd6000                __BL2_IMAGE_START__ = .
+ *(.bl2_image*)
+ .bl2_image     0x000000002ffd6000    0x111fc /home/charles/linux/code/tfa/mp157_alientek/tf-a-stm32mp-2.2.r1-r0/tf-a-stm32mp-2.2.r1/../build/serialboot/stm32mp1.o
+                0x000000002ffe71fc                __BL2_IMAGE_END__ = .
+                0x000000000002ab00                . = 0x2ab00
+ *fill*         0x000000002ffe71fc     0x5e04 
+                0x000000002ffed000                __BL32_IMAGE_START__ = .
+ *(.bl32_image*)
+ .bl32_image    0x000000002ffed000    0x10540 /home/charles/linux/code/tfa/mp157_alientek/tf-a-stm32mp-2.2.r1-r0/tf-a-stm32mp-2.2.r1/../build/serialboot/stm32mp1.o
+                0x000000002fffd540                __BL32_IMAGE_END__ = .
+                0x000000002fffd540                __DATA_END__ = .
+                0x000000002fffd540                __TF_END__ = .
+LOAD /home/charles/linux/code/tfa/mp157_alientek/tf-a-stm32mp-2.2.r1-r0/tf-a-stm32mp-2.2.r1/../build/serialboot/stm32mp1.o
+OUTPUT(/home/charles/linux/code/tfa/mp157_alientek/tf-a-stm32mp-2.2.r1-r0/tf-a-stm32mp-2.2.r1/../build/serialboot/tf-a-stm32mp157c-ev1.elf elf32-littlearm)
+
+.bss            0x000000002fffd540        0x0
+ .bss           0x000000002fffd540        0x0 /home/charles/linux/code/tfa/mp157_alientek/tf-a-stm32mp-2.2.r1-r0/tf-a-stm32mp-2.2.r1/../build/serialboot/stm32mp1.o
+
+.ARM.attributes
+                0x0000000000000000       0x27
+ .ARM.attributes
+                0x0000000000000000       0x27 /home/charles/linux/code/tfa/mp157_alientek/tf-a-stm32mp-2.2.r1-r0/tf-a-stm32mp-2.2.r1/../build/serialboot/stm32mp1.o

@@ -1,0 +1,4 @@
+.vscode/
+kernel_dtb/
+rootfs/
+third-party/

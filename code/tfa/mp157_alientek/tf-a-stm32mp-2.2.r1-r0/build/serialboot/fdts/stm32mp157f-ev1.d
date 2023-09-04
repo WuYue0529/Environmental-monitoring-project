@@ -1,0 +1,1 @@
+/home/charles/linux/code/tfa/mp157_alientek/tf-a-stm32mp-2.2.r1-r0/tf-a-stm32mp-2.2.r1/../build/serialboot/fdts/stm32mp157f-ev1.dtb: /home/charles/linux/code/tfa/mp157_alientek/tf-a-stm32mp-2.2.r1-r0/tf-a-stm32mp-2.2.r1/../build/serialboot/fdts/stm32mp157f-ev1.pre.dts
