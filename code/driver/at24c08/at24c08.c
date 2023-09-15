@@ -57,7 +57,7 @@ static ssize_t at24c08_ops_write(struct file *filp, const char __user *buffer, s
 
 	/* args[0]:addr, args[1]:value */
 	msg[0].addr = addr;    /* 设备地址 */
-	msg[0].buf = args;     /* 写入的数据 */
+	msg[0].buf = args;     /* 写入的数据: 寄存器 + 数据 */
 	msg[0].len = 3;        /* 长度 */
 	msg[0].flags = 0;      /* 写标志 */
 
