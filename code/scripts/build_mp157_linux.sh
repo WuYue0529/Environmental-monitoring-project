@@ -2,7 +2,7 @@
 
 cd ../linux/linux-stm32mp-5.4.31-r0/linux-5.4.31
 
-
+# ./arch/arm/configs/stm32mp1_atk_defconfig
 # make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabihf- distclean
 
 # make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabihf- stm32mp1_atk_defconfig

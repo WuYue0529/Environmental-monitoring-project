@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cd ../buildroot/buildroot-2020.02.6
-
+# ./configs/stm32mp1_atk_defconfig
 # make distclean
 # make stm32mp1_atk_defconfig
 make

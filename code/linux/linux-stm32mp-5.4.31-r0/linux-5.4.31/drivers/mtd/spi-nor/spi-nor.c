@@ -5123,6 +5123,8 @@ static const struct of_device_id spi_nor_of_table[] = {
 	 * JEDEC READ ID opcode (0x9F). Use this, if possible.
 	 */
 	{ .compatible = "jedec,spi-nor" },
+	{ .compatible = "winbond,w25q64" },
+
 	{ /* sentinel */ },
 };
 MODULE_DEVICE_TABLE(of, spi_nor_of_table);
