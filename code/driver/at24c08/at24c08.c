@@ -45,20 +45,21 @@ struct at24c08_data zave;
 static ssize_t at24c08_ops_write(struct file *filp, const char __user *buffer, size_t size, loff_t *off)
 {
 	struct i2c_msg msg[1];
-	unsigned char args[3];
+	unsigned char *args = NULL;
+	args = kzalloc(size, GFP_KERNEL);
 	// if(size != 2){
 	// 		return -EINVAL;
 	// }
 
 	printk("at24c08_write......\n");
 	/* 成功返回0;失败返回未完成字节数 */
-	copy_from_user(args, buffer, 3);
+	copy_from_user(args, buffer, size + 1);
 	// printk("write parameters : args[0] = 0x%x, args[1] = 0x%x\n", args[0], args[1]);
 
 	/* args[0]:addr, args[1]:value */
 	msg[0].addr = addr;    /* 设备地址 */
 	msg[0].buf = args;     /* 写入的数据: 寄存器 + 数据 */
-	msg[0].len = 3;        /* 长度 */
+	msg[0].len = size + 1;        /* 长度 */
 	msg[0].flags = 0;      /* 写标志 */
 
 	if(i2c_transfer(zave.at24c08_client->adapter, msg, 1) == 1){
@@ -77,7 +78,9 @@ static ssize_t at24c08_ops_read(struct file *filp, char __user *buffer, size_t s
 {
 	struct i2c_msg msg[2];    /* 封装消息 */
 	unsigned char args;       /* 用户态传进来的要读取的从机寄存器 */
-	unsigned char data[2];       /* 要返回的数据 */
+	unsigned char *data = NULL;       /* 要返回的数据 */
+
+	data = kzalloc(size, GFP_KERNEL);
 
 	printk("at24c08_read begin\n");
 	copy_from_user(&args, buffer, 1);
@@ -91,27 +94,20 @@ static ssize_t at24c08_ops_read(struct file *filp, char __user *buffer, size_t s
 	/* 再读 */
 	msg[1].addr = addr;
 	msg[1].buf = data;        /* 接收读取的数据 */
-	msg[1].len = 2;            /* 要读取的数据长度 */
+	msg[1].len = size;            /* 要读取的数据长度 */
 	msg[1].flags = I2C_M_RD;   /* 读 */
 
 	/* 与目标设备进行2次通讯 */
 	if(i2c_transfer(zave.at24c08_client->adapter, msg, 2) == 2) {
-			/* 返回2,表示成功通讯2次 */
-			// copy_to_user(buffer, &data, 2);
-			// printk("at24c08_read succeed\n");
-			// printk("data[0] = 0x%x\n", data[0]);
-			// printk("data[1] = 0x%x\n", data[1]);
-			// printk("data[0] to char = %c\n", data[0]);
-			// printk("data[1] to char = %c\n", data[1]);
-			copy_to_user(buffer, &data, 2);
+			copy_to_user(buffer, data, size);
+			kfree(data);
 			return 1;
 	}
 	else{
 			printk("at24c08_read failed\n");
+			kfree(data);
 			return -EIO;
 	}
-
-
 }
 
 

@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/YourExecutableName.dir/main.cpp.o CMakeFiles/YourExecutableName.dir/src/ds18b20.cpp.o  -o YourExecutableName 

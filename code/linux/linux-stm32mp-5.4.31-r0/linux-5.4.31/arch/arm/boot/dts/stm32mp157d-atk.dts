@@ -43,15 +43,16 @@
 	leds {
 		compatible = "mp157led";
 		pinctrl-0 = <&led_pins_a>;
+		status = "okay";
 		led0 {
 			label = "red";
 			gpios = <&gpioi 0 GPIO_ACTIVE_LOW>;
-			default-state = "off";
+			default-state = "on";
 		};
 		led1 {
 			label = "green";
 			gpios = <&gpiof 3 GPIO_ACTIVE_LOW>;
-			default-state = "off";
+			default-state = "on";
 		};
 	};
 	beep {

@@ -1,0 +1,2 @@
+
+float BspGetTemp(void);

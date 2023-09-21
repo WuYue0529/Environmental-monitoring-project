@@ -1,0 +1,3 @@
+/home/zk/linux/code/application/build/CMakeFiles/rebuild_cache.dir
+/home/zk/linux/code/application/build/CMakeFiles/energetic.dir
+/home/zk/linux/code/application/build/CMakeFiles/edit_cache.dir
