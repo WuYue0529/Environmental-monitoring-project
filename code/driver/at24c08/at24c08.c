@@ -63,9 +63,7 @@ static ssize_t at24c08_ops_write(struct file *filp, const char __user *buffer, s
 	msg[0].flags = 0;      /* 写标志 */
 
 	if(i2c_transfer(zave.at24c08_client->adapter, msg, 1) == 1){
-			// printk("at24c08_write succeed\n");
-			printk("write char to eeprom = %c\n", args[1]);
-			printk("write char to eeprom = %c\n", args[2]);
+			printk("at24c08_write succeed\n");
 			return 2;
 	}
 	else{

@@ -103,4 +103,8 @@ ds18b20.h
 -
 common.h
 -
+pthread.h
+-
+at24c08.h
+-
 

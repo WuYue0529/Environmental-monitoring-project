@@ -95,29 +95,16 @@ Copyright © ALIENTEK Co., Ltd. 1998-2029. All rights reserved.
 #include "unistd.h"
 #include <pthread.h>
 
+
 bool ALARM_FLAG = false;
 
 int main()
 {
-	unsigned char readbuff[6] = {0};
-	unsigned char writebuff[5] = {'u', 'c', 'r', 'm', 't'};
 	pthread_t tid;
-
 	hello();
-
 	// 自检
 
-	// float t = BspGetTemp();
-	// printf("Temp is %f\n", t);
-	// // sleep(5);
-	// float t1 = BspGetTemp();
-	// printf("Temp is %f\n", t1);
-
-	// BspWriteEeprom(0x80, 5, writebuff);
-	// BspReadEeprom(0x80, 5, readbuff);
-	// printf("%c, %c, %c, %c, %c\n", readbuff[0], readbuff[1], readbuff[2], readbuff[3], readbuff[4]);
-	// alarm();
-	// // read_led_open();
+    // 初始化
 
 	// 添加任务 
 	pthread_create(&tid, NULL, monitorTemperature, NULL);
@@ -126,6 +113,5 @@ int main()
     while (1) {
         sleep(1); // 主线程延迟1秒
     }
-
     return 0;
 }
