@@ -13,5 +13,9 @@ CMakeFiles/energetic.dir/src/common.cpp.o: ../src/common.cpp
 
 CMakeFiles/energetic.dir/src/ds18b20.cpp.o: ../src/ds18b20.cpp
 
+CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/at24c08.h
+CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/common.h
+CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/ds18b20.h
+CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/led.h
 CMakeFiles/energetic.dir/src/led.cpp.o: ../src/led.cpp
 

@@ -8,9 +8,16 @@
 #include <linux/i2c-dev.h>
 #include <linux/types.h>
 #include <string>
+#include <ds18b20.h>
+#include <common.h>
+
+
 
 using namespace std;
 #define led_dev "/dev/led"
+
+extern bool ALARM_FLAG;
+int temperature = 0;
 
 int open_device(string device)
 {
@@ -86,24 +93,36 @@ int green_led_open(void)
 
 int run_normal(void)
 {
-    while (1)
-    {
-        green_led_off();
-        sleep(1);
-        green_led_open();
-        sleep(1);
-    }
-    return 0;
+    green_led_open();
+    delay(1);
+    green_led_off();
+    delay(1);
 }
 
 int alarm(void)
 {
-    while (1)
-    {
-        red_led_off();
-        usleep(300000);
-        red_led_open();
-        usleep(300000);
+    red_led_open();
+    delay(0.3);
+    red_led_off();
+    delay(0.3);
+}
+
+void controlLED() {
+    if (temperature > 25) {
+        alarm();
+    } else {
+       run_normal();
     }
-    return 0;
+}
+
+void *monitorTemperature(void *arg) {
+    while (1) {
+        // 模拟获取环境温度
+        temperature = BspGetTemp();
+
+        // 控制LED状态
+        controlLED();
+
+        usleep(1);
+    }
 }

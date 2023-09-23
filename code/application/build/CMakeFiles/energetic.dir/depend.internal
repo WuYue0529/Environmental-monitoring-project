@@ -14,4 +14,8 @@ CMakeFiles/energetic.dir/src/common.cpp.o
 CMakeFiles/energetic.dir/src/ds18b20.cpp.o
  /home/zk/linux/code/application/src/ds18b20.cpp
 CMakeFiles/energetic.dir/src/led.cpp.o
+ ../inc/at24c08.h
+ ../inc/common.h
+ ../inc/ds18b20.h
+ ../inc/led.h
  /home/zk/linux/code/application/src/led.cpp

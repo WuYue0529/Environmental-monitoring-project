@@ -1,5 +1,6 @@
 #include "stdio.h"
 #include <iostream>
+#include <time.h>
 
 void printEnergetic() {
     std::cout << "██████╗░░░░░░██████╗░███████╗██████╗░" << std::endl;
@@ -18,3 +19,13 @@ void hello(void)
     
     printEnergetic();
 }
+
+void delay(double seconds)
+{
+    struct timespec req;
+    req.tv_sec = (time_t)seconds;
+    req.tv_nsec = (long)((seconds - (double)req.tv_sec) * 1e9);
+
+    nanosleep(&req, NULL);
+}
+

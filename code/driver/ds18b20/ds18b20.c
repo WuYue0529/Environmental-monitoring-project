@@ -167,7 +167,6 @@ static int ds18b20_open(struct inode *inode, struct file *filp)
 static ssize_t ds18b20_read(struct file *filp, char __user *buf, size_t cnt, loff_t *offt)
 {
     int ret;
-    printk("read temp form ds18b20 driver\n\r");
     ret = copy_to_user(buf, &ds18b20.data[0], 2);
     if(ret)
         return -ENOMEM;

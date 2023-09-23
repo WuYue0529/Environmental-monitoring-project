@@ -13,7 +13,8 @@ add_executable(energetic main.cpp ${DIR_SRCS})
 
 # 添加头文件路径
 include_directories(inc)
-
+find_package(Threads REQUIRED)
+target_link_libraries(energetic Threads::Threads)
 # 指定编译输出路径
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build)
 

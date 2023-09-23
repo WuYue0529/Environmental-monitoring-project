@@ -8,6 +8,8 @@
 #include "string.h"
 
 
+extern bool ALARM_FLAG;
+
 float BspGetTemp(void)
 {
 	int fd, ret;

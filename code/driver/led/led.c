@@ -128,9 +128,8 @@ static int led_probe(struct platform_device *pdev)
 
     ret = gpio_request_one(mp157led.gpio_led[0], GPIOF_OUT_INIT_LOW, "leds");
     ret = gpio_request_one(mp157led.gpio_led[1], GPIOF_OUT_INIT_LOW, "leds");
-    gpio_direction_output(mp157led.gpio_led[0], 0);
-    gpio_direction_output(mp157led.gpio_led[1], 0);
-
+    gpio_direction_output(mp157led.gpio_led[0], 1);
+    gpio_direction_output(mp157led.gpio_led[1], 1);
 
     alloc_chrdev_region(&mp157led.devid, 0, GPIOLED_CNT, GPIOLED_NAME);
     mp157led.cdev.owner = THIS_MODULE;

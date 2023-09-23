@@ -27,6 +27,8 @@ common.h
 /home/zk/linux/code/application/common.h
 unistd.h
 /home/zk/linux/code/application/unistd.h
+pthread.h
+-
 
 /home/zk/linux/code/application/src/at24c08.cpp
 stdio.h
@@ -54,6 +56,8 @@ string.h
 stdio.h
 /home/zk/linux/code/application/src/stdio.h
 iostream
+-
+time.h
 -
 
 /home/zk/linux/code/application/src/ds18b20.cpp
@@ -94,5 +98,9 @@ linux/i2c-dev.h
 linux/types.h
 -
 string
+-
+ds18b20.h
+-
+common.h
 -
 
