@@ -96,19 +96,20 @@ Copyright © ALIENTEK Co., Ltd. 1998-2029. All rights reserved.
 #include <pthread.h>
 
 
-bool ALARM_FLAG = false;
-
 int main()
 {
 	pthread_t tid;
+
 	hello();
 	// 自检
 
     // 初始化
+	system("rm -f /home/w25q64/temp_log.txt");
+	system("touch /home/w25q64/temp_log.txt");
+	system("chmod +w /home/w25q64/temp_log.txt");
 
 	// 添加任务 
 	pthread_create(&tid, NULL, monitorTemperature, NULL);
-
 	// idle
     while (1) {
         sleep(1); // 主线程延迟1秒

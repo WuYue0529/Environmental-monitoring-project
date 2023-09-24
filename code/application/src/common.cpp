@@ -1,6 +1,12 @@
 #include "stdio.h"
 #include <iostream>
 #include <time.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <signal.h>
+#include <string.h>
+#include <sys/time.h>
+
 
 void printEnergetic() {
     std::cout << "██████╗░░░░░░██████╗░███████╗██████╗░" << std::endl;

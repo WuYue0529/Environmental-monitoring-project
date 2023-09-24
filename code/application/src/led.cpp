@@ -12,26 +12,17 @@
 #include <common.h>
 #include <pthread.h>
 #include <at24c08.h>
+#include <fstream>
+#include <sstream>
+#include <iostream>
 
 using namespace std;
 #define led_dev "/dev/led"
 
 
-int temperature = 0;
+float temperature = 0;
 unsigned char overtemperature_times = 0;
-// 定义一个工作队列
-struct work_queue {
-    // 队列中的任务数量
-    int count = 0;
-    // 队列中的最大任务数量
-    int max_count = 10;
-    // 队列中的任务数组
-    void (*tasks[10])();
-};
-// 创建一个工作队列
-struct work_queue my_queue;
-void alarm_hook(struct work_queue *queue);
-
+std::string monitor_log;
 
 int open_device(string device)
 {
@@ -106,7 +97,7 @@ int green_led_open(void)
 }
 
 static bool flag = true;
-int run_normal(void)
+void run_normal(void)
 {
     flag = true;
     green_led_open();
@@ -117,22 +108,64 @@ int run_normal(void)
 
 void *recode_handler(void *arg)
 {
-    for (int i = 0; i < my_queue.count; i++)
+    unsigned char readbuff = 0;
+	BspWriteEeprom(0x33, 1, &overtemperature_times);
+	BspReadEeprom(0x33, 1, &readbuff);
+	printf("overtemperature_times : %d\n", readbuff);
+}
+
+static pid_t pid;
+std::stringstream ss;
+void *log_handler(void *arg)
+{
+    std::system("date > temp.txt");
+    std::ifstream file("temp.txt");
+    string date;
+    if (file.is_open()) 
     {
-        my_queue.tasks[i]();
+        std::getline(file, date);
+        file.close();
+        std::remove("temp.txt");
+    }
+    std::stringstream ss;
+    ss << date << endl << "No : " << (int)overtemperature_times << " & temperature is : " << temperature;
+    monitor_log = ss.str();
+    std::cout << monitor_log << std::endl;
+    pid = fork();
+    if (pid == -1)
+    {
+        perror("fork");
+        exit(-1);
+    }
+    
+    if (pid == 0) // 子进程
+    {
+        // 向flash写log
+        // ss << monitor_log;
+        // 打开文件std::ios::app 表示以追加模式打开文件
+        std::ofstream file("/home/w25q64/temp_log.txt", std::ios::app);
+        // 将 ss 的内容写入文件并换行
+        file << ss.str() << std::endl;
+        file.close();
+        system("sync");
+        exit(0);
+    } 
+    else
+    {
+        // do nothing
     }
 }
 
-int alarm(void)
+void alarm(void)
 {
     pthread_t tid;
+    pthread_t tid_log;
     if(flag)
     {
         overtemperature_times++;
-        flag = false; 
-        printf("alarm_hook \n");
-        alarm_hook(&my_queue);
+        flag = false;
         pthread_create(&tid, NULL, recode_handler, NULL);
+        pthread_create(&tid_log, NULL, log_handler, NULL);
     }
     red_led_open();
     delay(0.3);
@@ -140,11 +173,12 @@ int alarm(void)
     delay(0.3);
 }
 
-void controlLED() {
-    if (temperature > 26) {
+void controlLED()
+{
+    if (temperature > 26.0) {
         alarm();
     } else {
-       run_normal();
+        run_normal();
     }
 }
 
@@ -161,22 +195,3 @@ void *monitorTemperature(void *arg)
     }
 }
 
-void recode_overtemperature_times()
-{
-    unsigned char readbuff = 0;
-	BspWriteEeprom(0x33, 1, &overtemperature_times);
-	BspReadEeprom(0x33, 1, &readbuff);
-	printf("overtemperature_times : %d\n", readbuff);
-    sleep(100);
-}
-
-// 钩子函数，将写eeprom的任务添加到工作队列中
-void alarm_hook(struct work_queue *queue)
-{
-    if (queue->count < queue->max_count) {
-        // 将写eeprom的任务添加到队列中
-        queue->tasks[queue->count++] = recode_overtemperature_times;
-    } else {
-        printf("工作队列已满，无法添加新的任务！\n");
-    }
-}

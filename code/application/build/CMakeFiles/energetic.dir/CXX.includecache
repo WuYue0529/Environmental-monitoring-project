@@ -59,6 +59,16 @@ iostream
 -
 time.h
 -
+unistd.h
+-
+stdlib.h
+-
+signal.h
+-
+string.h
+-
+sys/time.h
+-
 
 /home/zk/linux/code/application/src/ds18b20.cpp
 stdio.h
@@ -106,5 +116,11 @@ common.h
 pthread.h
 -
 at24c08.h
+-
+fstream
+-
+sstream
+-
+iostream
 -
 
