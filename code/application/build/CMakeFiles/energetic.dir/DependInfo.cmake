@@ -9,12 +9,14 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/zk/linux/code/application/src/common.cpp" "/home/zk/linux/code/application/build/CMakeFiles/energetic.dir/src/common.cpp.o"
   "/home/zk/linux/code/application/src/ds18b20.cpp" "/home/zk/linux/code/application/build/CMakeFiles/energetic.dir/src/ds18b20.cpp.o"
   "/home/zk/linux/code/application/src/led.cpp" "/home/zk/linux/code/application/build/CMakeFiles/energetic.dir/src/led.cpp.o"
+  "/home/zk/linux/code/application/test/test.cpp" "/home/zk/linux/code/application/build/CMakeFiles/energetic.dir/test/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../inc"
+  "../test"
   )
 
 # Targets to which this target links.

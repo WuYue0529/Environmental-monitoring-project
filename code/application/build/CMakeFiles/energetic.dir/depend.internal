@@ -6,6 +6,7 @@ CMakeFiles/energetic.dir/main.cpp.o
  ../inc/common.h
  ../inc/ds18b20.h
  ../inc/led.h
+ ../test/test.h
  /home/zk/linux/code/application/main.cpp
 CMakeFiles/energetic.dir/src/at24c08.cpp.o
  /home/zk/linux/code/application/src/at24c08.cpp
@@ -19,3 +20,10 @@ CMakeFiles/energetic.dir/src/led.cpp.o
  ../inc/ds18b20.h
  ../inc/led.h
  /home/zk/linux/code/application/src/led.cpp
+CMakeFiles/energetic.dir/test/test.cpp.o
+ ../inc/at24c08.h
+ ../inc/common.h
+ ../inc/ds18b20.h
+ ../inc/led.h
+ /home/zk/linux/code/application/test/test.cpp
+ /home/zk/linux/code/application/test/test.h

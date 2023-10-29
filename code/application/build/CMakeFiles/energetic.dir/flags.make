@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/zk/linux/code/application/inc 
+CXX_INCLUDES = -I/home/zk/linux/code/application/inc -I/home/zk/linux/code/application/test 
 

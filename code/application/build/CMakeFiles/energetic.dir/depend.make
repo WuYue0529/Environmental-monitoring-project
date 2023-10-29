@@ -5,6 +5,7 @@ CMakeFiles/energetic.dir/main.cpp.o: ../inc/at24c08.h
 CMakeFiles/energetic.dir/main.cpp.o: ../inc/common.h
 CMakeFiles/energetic.dir/main.cpp.o: ../inc/ds18b20.h
 CMakeFiles/energetic.dir/main.cpp.o: ../inc/led.h
+CMakeFiles/energetic.dir/main.cpp.o: ../test/test.h
 CMakeFiles/energetic.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/energetic.dir/src/at24c08.cpp.o: ../src/at24c08.cpp
@@ -18,4 +19,11 @@ CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/common.h
 CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/ds18b20.h
 CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/led.h
 CMakeFiles/energetic.dir/src/led.cpp.o: ../src/led.cpp
+
+CMakeFiles/energetic.dir/test/test.cpp.o: ../inc/at24c08.h
+CMakeFiles/energetic.dir/test/test.cpp.o: ../inc/common.h
+CMakeFiles/energetic.dir/test/test.cpp.o: ../inc/ds18b20.h
+CMakeFiles/energetic.dir/test/test.cpp.o: ../inc/led.h
+CMakeFiles/energetic.dir/test/test.cpp.o: ../test/test.cpp
+CMakeFiles/energetic.dir/test/test.cpp.o: ../test/test.h
 

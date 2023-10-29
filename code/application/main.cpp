@@ -13,6 +13,7 @@ Copyright © ALIENTEK Co., Ltd. 1998-2029. All rights reserved.
 #include "common.h"
 #include "unistd.h"
 #include <pthread.h>
+#include "test.h"
 
 
 int main()
@@ -29,6 +30,26 @@ int main()
 
 	// 添加任务 
 	pthread_create(&tid, NULL, monitorTemperature, NULL);
+
+	// 开始测试
+	SPIFlash spiFlash("w25q64");
+    EEPROM eeprom("at24c08");
+    TemperatureSensor temperatureSensor("ds18b20");
+
+    // 存储测试器件的容器
+    std::vector<Device*> devices;
+    devices.push_back(&spiFlash);
+    devices.push_back(&eeprom);
+    devices.push_back(&temperatureSensor);
+
+	int data = 55;
+    for (auto device : devices) {
+        device->resetDevice();
+        device->printDeviceInfo();
+        device->writeData(&data);
+        device->readData(&data);
+    }
+
 	// idle
     while (1) {
         sleep(1); // 主线程延迟1秒

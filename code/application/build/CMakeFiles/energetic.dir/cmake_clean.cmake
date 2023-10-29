@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/energetic.dir/src/common.cpp.o"
   "CMakeFiles/energetic.dir/src/ds18b20.cpp.o"
   "CMakeFiles/energetic.dir/src/led.cpp.o"
+  "CMakeFiles/energetic.dir/test/test.cpp.o"
   "energetic.pdb"
   "energetic"
 )
