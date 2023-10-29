@@ -1,0 +1,9 @@
+1、控制设备的两种方法：
+/dev/和/sys/device
+2、控制设备文件（/sys/device）的方法：
+命令行：
+    写：echo 1 > brightness
+    读：cat
+应用程序：
+    open -> read/write
+    eg：write(fd1, "none", 4);
