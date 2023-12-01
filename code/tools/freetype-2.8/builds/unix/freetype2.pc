@@ -1,0 +1,14 @@
+prefix=/home/zk/linux/code/application/lib/freetype
+exec_prefix=/home/zk/linux/code/application/lib/freetype
+libdir=/home/zk/linux/code/application/lib/freetype/lib
+includedir=/home/zk/linux/code/application/lib/freetype/include
+
+Name: FreeType 2
+URL: http://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 20.0.14
+Requires:
+Requires.private: 
+Libs: -L${libdir} -lfreetype
+Libs.private: -lz -lpng
+Cflags: -I${includedir}/freetype2

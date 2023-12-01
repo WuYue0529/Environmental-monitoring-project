@@ -5,8 +5,14 @@ CMakeFiles/energetic.dir/main.cpp.o
  ../inc/at24c08.h
  ../inc/common.h
  ../inc/ds18b20.h
+ ../inc/lcd_fb.h
  ../inc/led.h
- ../test/test.h
+ ../inc/mqtt_client.h
+ ../inc/png_mte.h
+ ../inc/tcp_server.h
+ ../inc/touch.h
+ ../inc/uart_test.h
+ ../inc/word.h
  /home/zk/linux/code/application/main.cpp
 CMakeFiles/energetic.dir/src/at24c08.cpp.o
  /home/zk/linux/code/application/src/at24c08.cpp
@@ -14,16 +20,47 @@ CMakeFiles/energetic.dir/src/common.cpp.o
  /home/zk/linux/code/application/src/common.cpp
 CMakeFiles/energetic.dir/src/ds18b20.cpp.o
  /home/zk/linux/code/application/src/ds18b20.cpp
+CMakeFiles/energetic.dir/src/lcd_fb.cpp.o
+ ../lib/jpeglib/include/jconfig.h
+ ../lib/jpeglib/include/jerror.h
+ ../lib/jpeglib/include/jmorecfg.h
+ ../lib/jpeglib/include/jpeglib.h
+ /home/zk/linux/code/application/src/lcd_fb.cpp
 CMakeFiles/energetic.dir/src/led.cpp.o
  ../inc/at24c08.h
  ../inc/common.h
  ../inc/ds18b20.h
+ ../inc/lcd_fb.h
  ../inc/led.h
+ ../inc/mqtt_client.h
+ ../inc/png_mte.h
+ ../inc/tcp_server.h
+ ../inc/touch.h
+ ../inc/uart_test.h
+ ../inc/word.h
  /home/zk/linux/code/application/src/led.cpp
-CMakeFiles/energetic.dir/test/test.cpp.o
- ../inc/at24c08.h
- ../inc/common.h
- ../inc/ds18b20.h
- ../inc/led.h
- /home/zk/linux/code/application/test/test.cpp
- /home/zk/linux/code/application/test/test.h
+CMakeFiles/energetic.dir/src/mqtt_client.cpp.o
+ ../lib/mqttlib/include/MQTTClient.h
+ ../lib/mqttlib/include/MQTTClientPersistence.h
+ ../lib/mqttlib/include/MQTTExportDeclarations.h
+ ../lib/mqttlib/include/MQTTProperties.h
+ ../lib/mqttlib/include/MQTTReasonCodes.h
+ ../lib/mqttlib/include/MQTTSubscribeOpts.h
+ /home/zk/linux/code/application/src/mqtt_client.cpp
+CMakeFiles/energetic.dir/src/png.cpp.o
+ ../inc/png_mte.h
+ ../lib/pnglib/include/png.h
+ ../lib/pnglib/include/pngconf.h
+ ../lib/pnglib/include/pnglibconf.h
+ /home/zk/linux/code/application/src/png.cpp
+CMakeFiles/energetic.dir/src/tcp_server.cpp.o
+ /home/zk/linux/code/application/src/tcp_server.cpp
+CMakeFiles/energetic.dir/src/touch.cpp.o
+ /home/zk/linux/code/application/src/touch.cpp
+ /home/zk/linux/code/tools/tslib/include/tslib.h
+CMakeFiles/energetic.dir/src/uart_test.cpp.o
+ /home/zk/linux/code/application/src/uart_test.cpp
+CMakeFiles/energetic.dir/src/word.cpp.o
+ ../lib/freetype/include/freetype2/freetype/config/ftheader.h
+ ../lib/freetype/include/freetype2/ft2build.h
+ /home/zk/linux/code/application/src/word.cpp

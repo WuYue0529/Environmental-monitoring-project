@@ -53,3 +53,805 @@ Makefile:126: recipe for target 'cmTC_74728/fast' failed
 make: *** [cmTC_74728/fast] Error 2
 
 
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bc62e/fast && /usr/bin/make -f CMakeFiles/cmTC_bc62e.dir/build.make CMakeFiles/cmTC_bc62e.dir/build
+make[1]: 进入目录“/home/zk/linux/code/application/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_bc62e.dir/src.c.o
+/usr/bin/cc --sysroot=/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types  -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_bc62e.dir/src.c.o   -c /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/sys/cdefs.h:452:0,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/features.h:465,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:21,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/wordsize.h:23:2: error: #error "__WORDSIZE is not defined"
+ #error "__WORDSIZE is not defined"
+  ^~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/wordsize.h:46:2: error: #error "Unknown __WORDSIZE detected"
+ #error "Unknown __WORDSIZE detected"
+  ^~~~~
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/sys/cdefs.h:453:0,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/features.h:465,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:21,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/long-double.h:23:2: error: #error "__WORDSIZE is not defined"
+ #error "__WORDSIZE is not defined"
+  ^~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/long-double.h:46:2: error: #error "Unknown __WORDSIZE detected"
+ #error "Unknown __WORDSIZE detected"
+  ^~~~~
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/features.h:489:0,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:21,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/gnu/stubs.h:23:2: error: #error "__WORDSIZE is not defined"
+ #error "__WORDSIZE is not defined"
+  ^~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/gnu/stubs.h:46:2: error: #error "Unknown __WORDSIZE detected"
+ #error "Unknown __WORDSIZE detected"
+  ^~~~~
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/sched.h:25:0,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:22,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:139:3: error: #error 
+ # error
+   ^~~~~
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:141:0,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/sched.h:25,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:22,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/typesizes.h:23:2: error: #error "__WORDSIZE is not defined"
+ #error "__WORDSIZE is not defined"
+  ^~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/typesizes.h:46:2: error: #error "Unknown __WORDSIZE detected"
+ #error "Unknown __WORDSIZE detected"
+  ^~~~~
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/sched.h:25:0,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:22,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:145:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __DEV_T_TYPE __dev_t; /* Type of device numbers.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:145:25: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__dev_t’
+ __STD_TYPE __DEV_T_TYPE __dev_t; /* Type of device numbers.  */
+                         ^~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:146:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __UID_T_TYPE __uid_t; /* Type of user identifications.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:146:25: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__uid_t’
+ __STD_TYPE __UID_T_TYPE __uid_t; /* Type of user identifications.  */
+                         ^~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:147:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __GID_T_TYPE __gid_t; /* Type of group identifications.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:147:25: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__gid_t’
+ __STD_TYPE __GID_T_TYPE __gid_t; /* Type of group identifications.  */
+                         ^~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:148:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __INO_T_TYPE __ino_t; /* Type of file serial numbers.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:148:25: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__ino_t’
+ __STD_TYPE __INO_T_TYPE __ino_t; /* Type of file serial numbers.  */
+                         ^~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:149:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __INO64_T_TYPE __ino64_t; /* Type of file serial numbers (LFS).*/
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:149:27: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__ino64_t’
+ __STD_TYPE __INO64_T_TYPE __ino64_t; /* Type of file serial numbers (LFS).*/
+                           ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:150:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __MODE_T_TYPE __mode_t; /* Type of file attribute bitmasks.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:150:26: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__mode_t’
+ __STD_TYPE __MODE_T_TYPE __mode_t; /* Type of file attribute bitmasks.  */
+                          ^~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:151:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __NLINK_T_TYPE __nlink_t; /* Type of file link counts.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:151:27: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__nlink_t’
+ __STD_TYPE __NLINK_T_TYPE __nlink_t; /* Type of file link counts.  */
+                           ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:152:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __OFF_T_TYPE __off_t; /* Type of file sizes and offsets.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:152:25: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__off_t’
+ __STD_TYPE __OFF_T_TYPE __off_t; /* Type of file sizes and offsets.  */
+                         ^~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:153:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __OFF64_T_TYPE __off64_t; /* Type of file sizes and offsets (LFS).  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:153:27: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__off64_t’
+ __STD_TYPE __OFF64_T_TYPE __off64_t; /* Type of file sizes and offsets (LFS).  */
+                           ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:154:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __PID_T_TYPE __pid_t; /* Type of process identifications.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:154:25: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__pid_t’
+ __STD_TYPE __PID_T_TYPE __pid_t; /* Type of process identifications.  */
+                         ^~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:155:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __FSID_T_TYPE __fsid_t; /* Type of file system IDs.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:155:26: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__fsid_t’
+ __STD_TYPE __FSID_T_TYPE __fsid_t; /* Type of file system IDs.  */
+                          ^~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:156:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __CLOCK_T_TYPE __clock_t; /* Type of CPU usage counts.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:156:27: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__clock_t’
+ __STD_TYPE __CLOCK_T_TYPE __clock_t; /* Type of CPU usage counts.  */
+                           ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:157:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __RLIM_T_TYPE __rlim_t; /* Type for resource measurement.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:157:26: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__rlim_t’
+ __STD_TYPE __RLIM_T_TYPE __rlim_t; /* Type for resource measurement.  */
+                          ^~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:158:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __RLIM64_T_TYPE __rlim64_t; /* Type for resource measurement (LFS).  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:158:28: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__rlim64_t’
+ __STD_TYPE __RLIM64_T_TYPE __rlim64_t; /* Type for resource measurement (LFS).  */
+                            ^~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:159:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __ID_T_TYPE __id_t;  /* General type for IDs.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:159:24: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__id_t’
+ __STD_TYPE __ID_T_TYPE __id_t;  /* General type for IDs.  */
+                        ^~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:160:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __TIME_T_TYPE __time_t; /* Seconds since the Epoch.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:160:26: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__time_t’
+ __STD_TYPE __TIME_T_TYPE __time_t; /* Seconds since the Epoch.  */
+                          ^~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:161:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __USECONDS_T_TYPE __useconds_t; /* Count of microseconds.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:161:30: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__useconds_t’
+ __STD_TYPE __USECONDS_T_TYPE __useconds_t; /* Count of microseconds.  */
+                              ^~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:162:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __SUSECONDS_T_TYPE __suseconds_t; /* Signed count of microseconds.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:162:31: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__suseconds_t’
+ __STD_TYPE __SUSECONDS_T_TYPE __suseconds_t; /* Signed count of microseconds.  */
+                               ^~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:164:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __DADDR_T_TYPE __daddr_t; /* The type of a disk address.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:164:27: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__daddr_t’
+ __STD_TYPE __DADDR_T_TYPE __daddr_t; /* The type of a disk address.  */
+                           ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:165:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __KEY_T_TYPE __key_t; /* Type of an IPC key.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:165:25: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__key_t’
+ __STD_TYPE __KEY_T_TYPE __key_t; /* Type of an IPC key.  */
+                         ^~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:168:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __CLOCKID_T_TYPE __clockid_t;
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:168:29: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__clockid_t’
+ __STD_TYPE __CLOCKID_T_TYPE __clockid_t;
+                             ^~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:171:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __TIMER_T_TYPE __timer_t;
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:171:27: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__timer_t’
+ __STD_TYPE __TIMER_T_TYPE __timer_t;
+                           ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:174:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __BLKSIZE_T_TYPE __blksize_t;
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:174:29: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__blksize_t’
+ __STD_TYPE __BLKSIZE_T_TYPE __blksize_t;
+                             ^~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:179:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __BLKCNT_T_TYPE __blkcnt_t;
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:179:28: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__blkcnt_t’
+ __STD_TYPE __BLKCNT_T_TYPE __blkcnt_t;
+                            ^~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:180:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __BLKCNT64_T_TYPE __blkcnt64_t;
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:180:30: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__blkcnt64_t’
+ __STD_TYPE __BLKCNT64_T_TYPE __blkcnt64_t;
+                              ^~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:183:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __FSBLKCNT_T_TYPE __fsblkcnt_t;
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:183:30: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__fsblkcnt_t’
+ __STD_TYPE __FSBLKCNT_T_TYPE __fsblkcnt_t;
+                              ^~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:184:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __FSBLKCNT64_T_TYPE __fsblkcnt64_t;
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:184:32: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__fsblkcnt64_t’
+ __STD_TYPE __FSBLKCNT64_T_TYPE __fsblkcnt64_t;
+                                ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:187:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __FSFILCNT_T_TYPE __fsfilcnt_t;
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:187:30: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__fsfilcnt_t’
+ __STD_TYPE __FSFILCNT_T_TYPE __fsfilcnt_t;
+                              ^~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:188:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __FSFILCNT64_T_TYPE __fsfilcnt64_t;
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:188:32: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__fsfilcnt64_t’
+ __STD_TYPE __FSFILCNT64_T_TYPE __fsfilcnt64_t;
+                                ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:191:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __FSWORD_T_TYPE __fsword_t;
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:191:28: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__fsword_t’
+ __STD_TYPE __FSWORD_T_TYPE __fsword_t;
+                            ^~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:193:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __SSIZE_T_TYPE __ssize_t; /* Type of a byte count, or error.  */
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:193:27: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__ssize_t’
+ __STD_TYPE __SSIZE_T_TYPE __ssize_t; /* Type of a byte count, or error.  */
+                           ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:196:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __SYSCALL_SLONG_TYPE __syscall_slong_t;
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:196:33: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__syscall_slong_t’
+ __STD_TYPE __SYSCALL_SLONG_TYPE __syscall_slong_t;
+                                 ^~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:198:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __SYSCALL_ULONG_TYPE __syscall_ulong_t;
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:198:33: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__syscall_ulong_t’
+ __STD_TYPE __SYSCALL_ULONG_TYPE __syscall_ulong_t;
+                                 ^~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:202:9: error: unknown type name ‘__off64_t’
+ typedef __off64_t __loff_t; /* Type of file sizes and offsets (LFS).  */
+         ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:206:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __SWORD_TYPE __intptr_t;
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:206:25: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__intptr_t’
+ __STD_TYPE __SWORD_TYPE __intptr_t;
+                         ^~~~~~~~~~
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/sched.h:25:0,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:22,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:209:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘unsigned’
+ __STD_TYPE __U32_TYPE __socklen_t;
+            ^
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/sched.h:25:0,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:22,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:222:1: error: unknown type name ‘__STD_TYPE’; did you mean ‘__S32_TYPE’?
+ __STD_TYPE __TIME64_T_TYPE __time64_t;
+ ^~~~~~~~~~
+ __S32_TYPE
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types.h:222:28: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__time64_t’
+ __STD_TYPE __TIME64_T_TYPE __time64_t;
+                            ^~~~~~~~~~
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/sched.h:31:0,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:22,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types/time_t.h:7:9: error: unknown type name ‘__time_t’
+ typedef __time_t time_t;
+         ^~~~~~~~
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types/struct_timespec.h:6:0,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/sched.h:32,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:22,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/endian.h:23:2: error: #error "__WORDSIZE is not defined"
+ #error "__WORDSIZE is not defined"
+  ^~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/endian.h:46:2: error: #error "Unknown __WORDSIZE detected"
+ #error "Unknown __WORDSIZE detected"
+  ^~~~~
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/sched.h:32:0,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:22,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types/struct_timespec.h:12:3: error: unknown type name ‘__time_t’
+   __time_t tv_sec;  /* Seconds.  */
+   ^~~~~~~~
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:22:0,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/sched.h:38:9: error: unknown type name ‘__pid_t’
+ typedef __pid_t pid_t;
+         ^~~~~~~
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/sched.h:44:0,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:22,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/cpu-set.h:32:9: error: unknown type name ‘__CPU_MASK_TYPE’
+ typedef __CPU_MASK_TYPE __cpu_mask;
+         ^~~~~~~~~~~~~~~
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:22:0,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/sched.h:54:28: error: unknown type name ‘__pid_t’; did you mean ‘pid_t’?
+ extern int sched_setparam (__pid_t __pid, const struct sched_param *__param)
+                            ^~~~~~~
+                            pid_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/sched.h:58:28: error: unknown type name ‘__pid_t’; did you mean ‘pid_t’?
+ extern int sched_getparam (__pid_t __pid, struct sched_param *__param) __THROW;
+                            ^~~~~~~
+                            pid_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/sched.h:61:32: error: unknown type name ‘__pid_t’; did you mean ‘pid_t’?
+ extern int sched_setscheduler (__pid_t __pid, int __policy,
+                                ^~~~~~~
+                                pid_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/sched.h:65:32: error: unknown type name ‘__pid_t’; did you mean ‘pid_t’?
+ extern int sched_getscheduler (__pid_t __pid) __THROW;
+                                ^~~~~~~
+                                pid_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/sched.h:77:35: error: unknown type name ‘__pid_t’; did you mean ‘pid_t’?
+ extern int sched_rr_get_interval (__pid_t __pid, struct timespec *__t) __THROW;
+                                   ^~~~~~~
+                                   pid_t
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/time.h:37:0,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:23,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types/clock_t.h:7:9: error: unknown type name ‘__clock_t’
+ typedef __clock_t clock_t;
+         ^~~~~~~~~
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/time.h:46:0,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:23,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types/clockid_t.h:7:9: error: unknown type name ‘__clockid_t’
+ typedef __clockid_t clockid_t;
+         ^~~~~~~~~~~
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/time.h:47:0,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:23,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/types/timer_t.h:7:9: error: unknown type name ‘__timer_t’
+ typedef __timer_t timer_t;
+         ^~~~~~~~~
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:26:0,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/pthreadtypes.h:23:2: error: #error "__WORDSIZE is not defined"
+ #error "__WORDSIZE is not defined"
+  ^~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/pthreadtypes.h:46:2: error: #error "Unknown __WORDSIZE detected"
+ #error "Unknown __WORDSIZE detected"
+  ^~~~~
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:27:0,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/setjmp.h:23:2: error: #error "__WORDSIZE is not defined"
+ #error "__WORDSIZE is not defined"
+  ^~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/bits/setjmp.h:46:2: error: #error "Unknown __WORDSIZE detected"
+ #error "Unknown __WORDSIZE detected"
+  ^~~~~
+In file included from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:0:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:198:28: error: unknown type name ‘pthread_t’
+ extern int pthread_create (pthread_t *__restrict __newthread,
+                            ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:199:13: error: unknown type name ‘pthread_attr_t’
+       const pthread_attr_t *__restrict __attr,
+             ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:215:26: error: unknown type name ‘pthread_t’
+ extern int pthread_join (pthread_t __th, void **__thread_return);
+                          ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:247:28: error: unknown type name ‘pthread_t’
+ extern int pthread_detach (pthread_t __th) __THROW;
+                            ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:251:8: error: unknown type name ‘pthread_t’
+ extern pthread_t pthread_self (void) __THROW __attribute__ ((__const__));
+        ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:254:27: error: unknown type name ‘pthread_t’
+ extern int pthread_equal (pthread_t __thread1, pthread_t __thread2)
+                           ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:254:48: error: unknown type name ‘pthread_t’
+ extern int pthread_equal (pthread_t __thread1, pthread_t __thread2)
+                                                ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:263:31: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_init (pthread_attr_t *__attr) __THROW __nonnull ((1));
+                               ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:266:34: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_destroy (pthread_attr_t *__attr)
+                                  ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:270:47: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_getdetachstate (const pthread_attr_t *__attr,
+                                               ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:275:41: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_setdetachstate (pthread_attr_t *__attr,
+                                         ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:281:45: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_getguardsize (const pthread_attr_t *__attr,
+                                             ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:286:39: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_setguardsize (pthread_attr_t *__attr,
+                                       ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:292:46: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_getschedparam (const pthread_attr_t *__restrict __attr,
+                                              ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:297:40: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_setschedparam (pthread_attr_t *__restrict __attr,
+                                        ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:302:47: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_getschedpolicy (const pthread_attr_t *__restrict
+                                               ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:307:41: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_setschedpolicy (pthread_attr_t *__attr, int __policy)
+                                         ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:311:48: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_getinheritsched (const pthread_attr_t *__restrict
+                                                ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:316:42: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_setinheritsched (pthread_attr_t *__attr,
+                                          ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:322:41: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_getscope (const pthread_attr_t *__restrict __attr,
+                                         ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:327:35: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_setscope (pthread_attr_t *__attr, int __scope)
+                                   ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:331:45: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_getstackaddr (const pthread_attr_t *__restrict
+                                             ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:339:39: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_setstackaddr (pthread_attr_t *__attr,
+                                       ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:344:45: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_getstacksize (const pthread_attr_t *__restrict
+                                             ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:351:39: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_setstacksize (pthread_attr_t *__attr,
+                                       ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:357:41: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_getstack (const pthread_attr_t *__restrict __attr,
+                                         ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:365:35: error: unknown type name ‘pthread_attr_t’
+ extern int pthread_attr_setstack (pthread_attr_t *__attr, void *__stackaddr,
+                                   ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:405:35: error: unknown type name ‘pthread_t’
+ extern int pthread_setschedparam (pthread_t __target_thread, int __policy,
+                                   ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:410:35: error: unknown type name ‘pthread_t’
+ extern int pthread_getschedparam (pthread_t __target_thread,
+                                   ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:416:34: error: unknown type name ‘pthread_t’
+ extern int pthread_setschedprio (pthread_t __target_thread, int __prio)
+                                  ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:470:26: error: unknown type name ‘pthread_once_t’
+ extern int pthread_once (pthread_once_t *__once_control,
+                          ^~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:489:28: error: unknown type name ‘pthread_t’
+ extern int pthread_cancel (pthread_t __th);
+                            ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:503:5: error: unknown type name ‘__jmp_buf’
+     __jmp_buf __cancel_jmp_buf;
+     ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:725:32: error: unknown type name ‘pthread_mutex_t’
+ extern int pthread_mutex_init (pthread_mutex_t *__mutex,
+                                ^~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:726:17: error: unknown type name ‘pthread_mutexattr_t’
+           const pthread_mutexattr_t *__mutexattr)
+                 ^~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:730:35: error: unknown type name ‘pthread_mutex_t’
+ extern int pthread_mutex_destroy (pthread_mutex_t *__mutex)
+                                   ^~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:734:35: error: unknown type name ‘pthread_mutex_t’
+ extern int pthread_mutex_trylock (pthread_mutex_t *__mutex)
+                                   ^~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:738:32: error: unknown type name ‘pthread_mutex_t’
+ extern int pthread_mutex_lock (pthread_mutex_t *__mutex)
+                                ^~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:743:37: error: unknown type name ‘pthread_mutex_t’
+ extern int pthread_mutex_timedlock (pthread_mutex_t *__restrict __mutex,
+                                     ^~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:756:34: error: unknown type name ‘pthread_mutex_t’
+ extern int pthread_mutex_unlock (pthread_mutex_t *__mutex)
+                                  ^~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:761:48: error: unknown type name ‘pthread_mutex_t’
+ extern int pthread_mutex_getprioceiling (const pthread_mutex_t *
+                                                ^~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:768:42: error: unknown type name ‘pthread_mutex_t’
+ extern int pthread_mutex_setprioceiling (pthread_mutex_t *__restrict __mutex,
+                                          ^~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:776:38: error: unknown type name ‘pthread_mutex_t’
+ extern int pthread_mutex_consistent (pthread_mutex_t *__mutex)
+                                      ^~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:789:36: error: unknown type name ‘pthread_mutexattr_t’
+ extern int pthread_mutexattr_init (pthread_mutexattr_t *__attr)
+                                    ^~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:793:39: error: unknown type name ‘pthread_mutexattr_t’
+ extern int pthread_mutexattr_destroy (pthread_mutexattr_t *__attr)
+                                       ^~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:797:48: error: unknown type name ‘pthread_mutexattr_t’
+ extern int pthread_mutexattr_getpshared (const pthread_mutexattr_t *
+                                                ^~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:803:42: error: unknown type name ‘pthread_mutexattr_t’
+ extern int pthread_mutexattr_setpshared (pthread_mutexattr_t *__attr,
+                                          ^~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:809:45: error: unknown type name ‘pthread_mutexattr_t’
+ extern int pthread_mutexattr_gettype (const pthread_mutexattr_t *__restrict
+                                             ^~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:816:39: error: unknown type name ‘pthread_mutexattr_t’
+ extern int pthread_mutexattr_settype (pthread_mutexattr_t *__attr, int __kind)
+                                       ^~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:821:49: error: unknown type name ‘pthread_mutexattr_t’
+ extern int pthread_mutexattr_getprotocol (const pthread_mutexattr_t *
+                                                 ^~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:828:43: error: unknown type name ‘pthread_mutexattr_t’
+ extern int pthread_mutexattr_setprotocol (pthread_mutexattr_t *__attr,
+                                           ^~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:833:52: error: unknown type name ‘pthread_mutexattr_t’
+ extern int pthread_mutexattr_getprioceiling (const pthread_mutexattr_t *
+                                                    ^~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:839:46: error: unknown type name ‘pthread_mutexattr_t’
+ extern int pthread_mutexattr_setprioceiling (pthread_mutexattr_t *__attr,
+                                              ^~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:845:47: error: unknown type name ‘pthread_mutexattr_t’
+ extern int pthread_mutexattr_getrobust (const pthread_mutexattr_t *__attr,
+                                               ^~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:855:41: error: unknown type name ‘pthread_mutexattr_t’
+ extern int pthread_mutexattr_setrobust (pthread_mutexattr_t *__attr,
+                                         ^~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:871:33: error: unknown type name ‘pthread_rwlock_t’; did you mean ‘__pthread_unwind_buf_t’?
+ extern int pthread_rwlock_init (pthread_rwlock_t *__restrict __rwlock,
+                                 ^~~~~~~~~~~~~~~~
+                                 __pthread_unwind_buf_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:872:11: error: unknown type name ‘pthread_rwlockattr_t’
+     const pthread_rwlockattr_t *__restrict
+           ^~~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:876:36: error: unknown type name ‘pthread_rwlock_t’; did you mean ‘__pthread_unwind_buf_t’?
+ extern int pthread_rwlock_destroy (pthread_rwlock_t *__rwlock)
+                                    ^~~~~~~~~~~~~~~~
+                                    __pthread_unwind_buf_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:880:35: error: unknown type name ‘pthread_rwlock_t’; did you mean ‘__pthread_unwind_buf_t’?
+ extern int pthread_rwlock_rdlock (pthread_rwlock_t *__rwlock)
+                                   ^~~~~~~~~~~~~~~~
+                                   __pthread_unwind_buf_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:884:38: error: unknown type name ‘pthread_rwlock_t’; did you mean ‘__pthread_unwind_buf_t’?
+ extern int pthread_rwlock_tryrdlock (pthread_rwlock_t *__rwlock)
+                                      ^~~~~~~~~~~~~~~~
+                                      __pthread_unwind_buf_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:889:40: error: unknown type name ‘pthread_rwlock_t’; did you mean ‘__pthread_unwind_buf_t’?
+ extern int pthread_rwlock_timedrdlock (pthread_rwlock_t *__restrict __rwlock,
+                                        ^~~~~~~~~~~~~~~~
+                                        __pthread_unwind_buf_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:902:35: error: unknown type name ‘pthread_rwlock_t’; did you mean ‘__pthread_unwind_buf_t’?
+ extern int pthread_rwlock_wrlock (pthread_rwlock_t *__rwlock)
+                                   ^~~~~~~~~~~~~~~~
+                                   __pthread_unwind_buf_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:906:38: error: unknown type name ‘pthread_rwlock_t’; did you mean ‘__pthread_unwind_buf_t’?
+ extern int pthread_rwlock_trywrlock (pthread_rwlock_t *__rwlock)
+                                      ^~~~~~~~~~~~~~~~
+                                      __pthread_unwind_buf_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:911:40: error: unknown type name ‘pthread_rwlock_t’; did you mean ‘__pthread_unwind_buf_t’?
+ extern int pthread_rwlock_timedwrlock (pthread_rwlock_t *__restrict __rwlock,
+                                        ^~~~~~~~~~~~~~~~
+                                        __pthread_unwind_buf_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:924:35: error: unknown type name ‘pthread_rwlock_t’; did you mean ‘__pthread_unwind_buf_t’?
+ extern int pthread_rwlock_unlock (pthread_rwlock_t *__rwlock)
+                                   ^~~~~~~~~~~~~~~~
+                                   __pthread_unwind_buf_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:931:37: error: unknown type name ‘pthread_rwlockattr_t’
+ extern int pthread_rwlockattr_init (pthread_rwlockattr_t *__attr)
+                                     ^~~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:935:40: error: unknown type name ‘pthread_rwlockattr_t’
+ extern int pthread_rwlockattr_destroy (pthread_rwlockattr_t *__attr)
+                                        ^~~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:939:49: error: unknown type name ‘pthread_rwlockattr_t’
+ extern int pthread_rwlockattr_getpshared (const pthread_rwlockattr_t *
+                                                 ^~~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:945:43: error: unknown type name ‘pthread_rwlockattr_t’
+ extern int pthread_rwlockattr_setpshared (pthread_rwlockattr_t *__attr,
+                                           ^~~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:950:49: error: unknown type name ‘pthread_rwlockattr_t’
+ extern int pthread_rwlockattr_getkind_np (const pthread_rwlockattr_t *
+                                                 ^~~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:956:43: error: unknown type name ‘pthread_rwlockattr_t’
+ extern int pthread_rwlockattr_setkind_np (pthread_rwlockattr_t *__attr,
+                                           ^~~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:965:31: error: unknown type name ‘pthread_cond_t’; did you mean ‘pthread_cleanup_pop’?
+ extern int pthread_cond_init (pthread_cond_t *__restrict __cond,
+                               ^~~~~~~~~~~~~~
+                               pthread_cleanup_pop
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:966:16: error: unknown type name ‘pthread_condattr_t’
+          const pthread_condattr_t *__restrict __cond_attr)
+                ^~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:970:34: error: unknown type name ‘pthread_cond_t’; did you mean ‘pthread_cleanup_pop’?
+ extern int pthread_cond_destroy (pthread_cond_t *__cond)
+                                  ^~~~~~~~~~~~~~
+                                  pthread_cleanup_pop
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:974:33: error: unknown type name ‘pthread_cond_t’; did you mean ‘pthread_cleanup_pop’?
+ extern int pthread_cond_signal (pthread_cond_t *__cond)
+                                 ^~~~~~~~~~~~~~
+                                 pthread_cleanup_pop
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:978:36: error: unknown type name ‘pthread_cond_t’; did you mean ‘pthread_cleanup_pop’?
+ extern int pthread_cond_broadcast (pthread_cond_t *__cond)
+                                    ^~~~~~~~~~~~~~
+                                    pthread_cleanup_pop
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:986:31: error: unknown type name ‘pthread_cond_t’; did you mean ‘pthread_cleanup_pop’?
+ extern int pthread_cond_wait (pthread_cond_t *__restrict __cond,
+                               ^~~~~~~~~~~~~~
+                               pthread_cleanup_pop
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:987:10: error: unknown type name ‘pthread_mutex_t’
+          pthread_mutex_t *__restrict __mutex)
+          ^~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:997:36: error: unknown type name ‘pthread_cond_t’; did you mean ‘pthread_cleanup_pop’?
+ extern int pthread_cond_timedwait (pthread_cond_t *__restrict __cond,
+                                    ^~~~~~~~~~~~~~
+                                    pthread_cleanup_pop
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:998:8: error: unknown type name ‘pthread_mutex_t’
+        pthread_mutex_t *__restrict __mutex,
+        ^~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1020:35: error: unknown type name ‘pthread_condattr_t’; did you mean ‘pthread_cleanup_pop’?
+ extern int pthread_condattr_init (pthread_condattr_t *__attr)
+                                   ^~~~~~~~~~~~~~~~~~
+                                   pthread_cleanup_pop
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1024:38: error: unknown type name ‘pthread_condattr_t’; did you mean ‘pthread_cleanup_pop’?
+ extern int pthread_condattr_destroy (pthread_condattr_t *__attr)
+                                      ^~~~~~~~~~~~~~~~~~
+                                      pthread_cleanup_pop
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1028:47: error: unknown type name ‘pthread_condattr_t’
+ extern int pthread_condattr_getpshared (const pthread_condattr_t *
+                                               ^~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1034:41: error: unknown type name ‘pthread_condattr_t’; did you mean ‘pthread_cleanup_pop’?
+ extern int pthread_condattr_setpshared (pthread_condattr_t *__attr,
+                                         ^~~~~~~~~~~~~~~~~~
+                                         pthread_cleanup_pop
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1039:45: error: unknown type name ‘pthread_condattr_t’
+ extern int pthread_condattr_getclock (const pthread_condattr_t *
+                                             ^~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1041:11: error: unknown type name ‘__clockid_t’; did you mean ‘clockid_t’?
+           __clockid_t *__restrict __clock_id)
+           ^~~~~~~~~~~
+           clockid_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1045:39: error: unknown type name ‘pthread_condattr_t’; did you mean ‘pthread_cleanup_pop’?
+ extern int pthread_condattr_setclock (pthread_condattr_t *__attr,
+                                       ^~~~~~~~~~~~~~~~~~
+                                       pthread_cleanup_pop
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1046:11: error: unknown type name ‘__clockid_t’; did you mean ‘clockid_t’?
+           __clockid_t __clock_id)
+           ^~~~~~~~~~~
+           clockid_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1056:31: error: unknown type name ‘pthread_spinlock_t’; did you mean ‘__pthread_unwind_buf_t’?
+ extern int pthread_spin_init (pthread_spinlock_t *__lock, int __pshared)
+                               ^~~~~~~~~~~~~~~~~~
+                               __pthread_unwind_buf_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1060:34: error: unknown type name ‘pthread_spinlock_t’; did you mean ‘__pthread_unwind_buf_t’?
+ extern int pthread_spin_destroy (pthread_spinlock_t *__lock)
+                                  ^~~~~~~~~~~~~~~~~~
+                                  __pthread_unwind_buf_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1064:31: error: unknown type name ‘pthread_spinlock_t’; did you mean ‘__pthread_unwind_buf_t’?
+ extern int pthread_spin_lock (pthread_spinlock_t *__lock)
+                               ^~~~~~~~~~~~~~~~~~
+                               __pthread_unwind_buf_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1068:34: error: unknown type name ‘pthread_spinlock_t’; did you mean ‘__pthread_unwind_buf_t’?
+ extern int pthread_spin_trylock (pthread_spinlock_t *__lock)
+                                  ^~~~~~~~~~~~~~~~~~
+                                  __pthread_unwind_buf_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1072:33: error: unknown type name ‘pthread_spinlock_t’; did you mean ‘__pthread_unwind_buf_t’?
+ extern int pthread_spin_unlock (pthread_spinlock_t *__lock)
+                                 ^~~~~~~~~~~~~~~~~~
+                                 __pthread_unwind_buf_t
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1080:34: error: unknown type name ‘pthread_barrier_t’
+ extern int pthread_barrier_init (pthread_barrier_t *__restrict __barrier,
+                                  ^~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1081:12: error: unknown type name ‘pthread_barrierattr_t’
+      const pthread_barrierattr_t *__restrict
+            ^~~~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1086:37: error: unknown type name ‘pthread_barrier_t’
+ extern int pthread_barrier_destroy (pthread_barrier_t *__barrier)
+                                     ^~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1090:34: error: unknown type name ‘pthread_barrier_t’
+ extern int pthread_barrier_wait (pthread_barrier_t *__barrier)
+                                  ^~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1095:38: error: unknown type name ‘pthread_barrierattr_t’
+ extern int pthread_barrierattr_init (pthread_barrierattr_t *__attr)
+                                      ^~~~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1099:41: error: unknown type name ‘pthread_barrierattr_t’
+ extern int pthread_barrierattr_destroy (pthread_barrierattr_t *__attr)
+                                         ^~~~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1103:50: error: unknown type name ‘pthread_barrierattr_t’
+ extern int pthread_barrierattr_getpshared (const pthread_barrierattr_t *
+                                                  ^~~~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1109:44: error: unknown type name ‘pthread_barrierattr_t’
+ extern int pthread_barrierattr_setpshared (pthread_barrierattr_t *__attr,
+                                            ^~~~~~~~~~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1123:32: error: unknown type name ‘pthread_key_t’
+ extern int pthread_key_create (pthread_key_t *__key,
+                                ^~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1128:32: error: unknown type name ‘pthread_key_t’
+ extern int pthread_key_delete (pthread_key_t __key) __THROW;
+                                ^~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1131:35: error: unknown type name ‘pthread_key_t’
+ extern void *pthread_getspecific (pthread_key_t __key) __THROW;
+                                   ^~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1134:33: error: unknown type name ‘pthread_key_t’
+ extern int pthread_setspecific (pthread_key_t __key,
+                                 ^~~~~~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1140:35: error: unknown type name ‘pthread_t’
+ extern int pthread_getcpuclockid (pthread_t __thread_id,
+                                   ^~~~~~~~~
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1141:7: error: unknown type name ‘__clockid_t’; did you mean ‘clockid_t’?
+       __clockid_t *__clock_id)
+       ^~~~~~~~~~~
+       clockid_t
+In file included from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/features.h:465:0,
+                 from /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:21,
+                 from /home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:1:
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1165:1: error: unknown type name ‘pthread_t’
+ __NTH (pthread_equal (pthread_t __thread1, pthread_t __thread2))
+ ^
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/pthread.h:1165:1: error: unknown type name ‘pthread_t’
+ __NTH (pthread_equal (pthread_t __thread1, pthread_t __thread2))
+ ^
+/home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:10:3: error: unknown type name ‘pthread_t’
+   pthread_t thread;
+   ^~~~~~~~~
+/home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:11:3: warning: implicit declaration of function ‘pthread_create’; did you mean ‘pthread_self’? [-Wimplicit-function-declaration]
+   pthread_create(&thread, NULL, test_func, NULL);
+   ^~~~~~~~~~~~~~
+   pthread_self
+/home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:12:3: warning: implicit declaration of function ‘pthread_detach’; did you mean ‘pthread_self’? [-Wimplicit-function-declaration]
+   pthread_detach(thread);
+   ^~~~~~~~~~~~~~
+   pthread_self
+/home/zk/linux/code/application/build/CMakeFiles/CMakeTmp/src.c:13:3: warning: implicit declaration of function ‘pthread_join’; did you mean ‘pthread_exit’? [-Wimplicit-function-declaration]
+   pthread_join(thread, NULL);
+   ^~~~~~~~~~~~
+   pthread_exit
+CMakeFiles/cmTC_bc62e.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_bc62e.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_bc62e.dir/src.c.o] Error 1
+make[1]: 离开目录“/home/zk/linux/code/application/build/CMakeFiles/CMakeTmp”
+Makefile:121: recipe for target 'cmTC_bc62e/fast' failed
+make: *** [cmTC_bc62e/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

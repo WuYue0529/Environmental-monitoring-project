@@ -1,0 +1,13 @@
+arm/filter_neon.lo: arm/filter_neon.S \
+ /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/stdc-predef.h \
+ arm/../pngpriv.h config.h arm/../pnglibconf.h arm/../png.h
+
+/opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/include/stdc-predef.h:
+
+arm/../pngpriv.h:
+
+config.h:
+
+arm/../pnglibconf.h:
+
+arm/../png.h:

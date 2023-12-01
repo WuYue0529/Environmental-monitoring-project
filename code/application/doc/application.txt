@@ -7,3 +7,7 @@
 应用程序：
     open -> read/write
     eg：write(fd1, "none", 4);
+
+3、input子系统
+注册input_dev
+read:input_event

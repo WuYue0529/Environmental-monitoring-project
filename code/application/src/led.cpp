@@ -175,7 +175,7 @@ void alarm(void)
 
 void controlLED()
 {
-    if (temperature > 26.0) {
+    if (temperature > 30.0) {
         alarm();
     } else {
         run_normal();

@@ -13,12 +13,18 @@ Copyright © ALIENTEK Co., Ltd. 1998-2029. All rights reserved.
 #include "common.h"
 #include "unistd.h"
 #include <pthread.h>
-#include "test.h"
+// #include "test.h"
+#include <linux/input.h>
+#include <chrono>
+#include <thread>
+#include <termios.h>
 
 
 int main()
 {
 	pthread_t tid;
+	pthread_t tid_mqtt;
+
 
 	hello();
 	// 自检
@@ -32,25 +38,39 @@ int main()
 	pthread_create(&tid, NULL, monitorTemperature, NULL);
 
 	// 开始测试
-	SPIFlash spiFlash("w25q64");
-    EEPROM eeprom("at24c08");
-    TemperatureSensor temperatureSensor("ds18b20");
+	// SPIFlash spiFlash("w25q64");
+    // EEPROM eeprom("at24c08");
+    // TemperatureSensor temperatureSensor("ds18b20");
 
     // 存储测试器件的容器
-    std::vector<Device*> devices;
-    devices.push_back(&spiFlash);
-    devices.push_back(&eeprom);
-    devices.push_back(&temperatureSensor);
+    // std::vector<Device*> devices;
+    // devices.push_back(&spiFlash);
+    // devices.push_back(&eeprom);
+    // devices.push_back(&temperatureSensor);
 
-	int data = 55;
-    for (auto device : devices) {
-        device->resetDevice();
-        device->printDeviceInfo();
-        device->writeData(&data);
-        device->readData(&data);
-    }
+	// int data = 55;
+    // for (auto device : devices) {
+    //     device->resetDevice();
+    //     device->printDeviceInfo();
+    //     device->writeData(&data);
+    //     device->readData(&data);
+    // }
 
-	// idle
+    bool debugRequested = false;
+	// pthread_create(&tid_mqtt, NULL, mqtt_thread, NULL);
+    std::thread myThread(mqtt_thread);  // 创建线程并指定线程函数
+    myThread.detach();  // 分离线程，使其在后台运行
+    // tcp_server_test();
+
+    // uart_test();
+    // show_print();
+    // pngshow("/a.png");
+    // jpegshow();
+    // bmpshow();
+    // lcdscreeninfoshow();
+    // lcdscreentest();
+    // test_touch();
+	// // idle
     while (1) {
         sleep(1); // 主线程延迟1秒
     }

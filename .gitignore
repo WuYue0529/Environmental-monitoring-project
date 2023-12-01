@@ -2,3 +2,4 @@
 kernel_dtb/
 rootfs/
 third-party/
+code/tools/st-example-image-qtwayland-openstlinux-weston-stm32mp1-x86_64-toolchain-3.1-snapshot.sh

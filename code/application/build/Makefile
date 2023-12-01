@@ -231,6 +231,33 @@ src/ds18b20.cpp.s:
 	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/ds18b20.cpp.s
 .PHONY : src/ds18b20.cpp.s
 
+src/lcd_fb.o: src/lcd_fb.cpp.o
+
+.PHONY : src/lcd_fb.o
+
+# target to build an object file
+src/lcd_fb.cpp.o:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/lcd_fb.cpp.o
+.PHONY : src/lcd_fb.cpp.o
+
+src/lcd_fb.i: src/lcd_fb.cpp.i
+
+.PHONY : src/lcd_fb.i
+
+# target to preprocess a source file
+src/lcd_fb.cpp.i:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/lcd_fb.cpp.i
+.PHONY : src/lcd_fb.cpp.i
+
+src/lcd_fb.s: src/lcd_fb.cpp.s
+
+.PHONY : src/lcd_fb.s
+
+# target to generate assembly for a file
+src/lcd_fb.cpp.s:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/lcd_fb.cpp.s
+.PHONY : src/lcd_fb.cpp.s
+
 src/led.o: src/led.cpp.o
 
 .PHONY : src/led.o
@@ -258,32 +285,167 @@ src/led.cpp.s:
 	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/led.cpp.s
 .PHONY : src/led.cpp.s
 
-test/test.o: test/test.cpp.o
+src/mqtt_client.o: src/mqtt_client.cpp.o
 
-.PHONY : test/test.o
+.PHONY : src/mqtt_client.o
 
 # target to build an object file
-test/test.cpp.o:
-	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/test/test.cpp.o
-.PHONY : test/test.cpp.o
+src/mqtt_client.cpp.o:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/mqtt_client.cpp.o
+.PHONY : src/mqtt_client.cpp.o
 
-test/test.i: test/test.cpp.i
+src/mqtt_client.i: src/mqtt_client.cpp.i
 
-.PHONY : test/test.i
+.PHONY : src/mqtt_client.i
 
 # target to preprocess a source file
-test/test.cpp.i:
-	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/test/test.cpp.i
-.PHONY : test/test.cpp.i
+src/mqtt_client.cpp.i:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/mqtt_client.cpp.i
+.PHONY : src/mqtt_client.cpp.i
 
-test/test.s: test/test.cpp.s
+src/mqtt_client.s: src/mqtt_client.cpp.s
 
-.PHONY : test/test.s
+.PHONY : src/mqtt_client.s
 
 # target to generate assembly for a file
-test/test.cpp.s:
-	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/test/test.cpp.s
-.PHONY : test/test.cpp.s
+src/mqtt_client.cpp.s:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/mqtt_client.cpp.s
+.PHONY : src/mqtt_client.cpp.s
+
+src/png.o: src/png.cpp.o
+
+.PHONY : src/png.o
+
+# target to build an object file
+src/png.cpp.o:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/png.cpp.o
+.PHONY : src/png.cpp.o
+
+src/png.i: src/png.cpp.i
+
+.PHONY : src/png.i
+
+# target to preprocess a source file
+src/png.cpp.i:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/png.cpp.i
+.PHONY : src/png.cpp.i
+
+src/png.s: src/png.cpp.s
+
+.PHONY : src/png.s
+
+# target to generate assembly for a file
+src/png.cpp.s:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/png.cpp.s
+.PHONY : src/png.cpp.s
+
+src/tcp_server.o: src/tcp_server.cpp.o
+
+.PHONY : src/tcp_server.o
+
+# target to build an object file
+src/tcp_server.cpp.o:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/tcp_server.cpp.o
+.PHONY : src/tcp_server.cpp.o
+
+src/tcp_server.i: src/tcp_server.cpp.i
+
+.PHONY : src/tcp_server.i
+
+# target to preprocess a source file
+src/tcp_server.cpp.i:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/tcp_server.cpp.i
+.PHONY : src/tcp_server.cpp.i
+
+src/tcp_server.s: src/tcp_server.cpp.s
+
+.PHONY : src/tcp_server.s
+
+# target to generate assembly for a file
+src/tcp_server.cpp.s:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/tcp_server.cpp.s
+.PHONY : src/tcp_server.cpp.s
+
+src/touch.o: src/touch.cpp.o
+
+.PHONY : src/touch.o
+
+# target to build an object file
+src/touch.cpp.o:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/touch.cpp.o
+.PHONY : src/touch.cpp.o
+
+src/touch.i: src/touch.cpp.i
+
+.PHONY : src/touch.i
+
+# target to preprocess a source file
+src/touch.cpp.i:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/touch.cpp.i
+.PHONY : src/touch.cpp.i
+
+src/touch.s: src/touch.cpp.s
+
+.PHONY : src/touch.s
+
+# target to generate assembly for a file
+src/touch.cpp.s:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/touch.cpp.s
+.PHONY : src/touch.cpp.s
+
+src/uart_test.o: src/uart_test.cpp.o
+
+.PHONY : src/uart_test.o
+
+# target to build an object file
+src/uart_test.cpp.o:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/uart_test.cpp.o
+.PHONY : src/uart_test.cpp.o
+
+src/uart_test.i: src/uart_test.cpp.i
+
+.PHONY : src/uart_test.i
+
+# target to preprocess a source file
+src/uart_test.cpp.i:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/uart_test.cpp.i
+.PHONY : src/uart_test.cpp.i
+
+src/uart_test.s: src/uart_test.cpp.s
+
+.PHONY : src/uart_test.s
+
+# target to generate assembly for a file
+src/uart_test.cpp.s:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/uart_test.cpp.s
+.PHONY : src/uart_test.cpp.s
+
+src/word.o: src/word.cpp.o
+
+.PHONY : src/word.o
+
+# target to build an object file
+src/word.cpp.o:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/word.cpp.o
+.PHONY : src/word.cpp.o
+
+src/word.i: src/word.cpp.i
+
+.PHONY : src/word.i
+
+# target to preprocess a source file
+src/word.cpp.i:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/word.cpp.i
+.PHONY : src/word.cpp.i
+
+src/word.s: src/word.cpp.s
+
+.PHONY : src/word.s
+
+# target to generate assembly for a file
+src/word.cpp.s:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/word.cpp.s
+.PHONY : src/word.cpp.s
 
 # Help Target
 help:
@@ -306,12 +468,30 @@ help:
 	@echo "... src/ds18b20.o"
 	@echo "... src/ds18b20.i"
 	@echo "... src/ds18b20.s"
+	@echo "... src/lcd_fb.o"
+	@echo "... src/lcd_fb.i"
+	@echo "... src/lcd_fb.s"
 	@echo "... src/led.o"
 	@echo "... src/led.i"
 	@echo "... src/led.s"
-	@echo "... test/test.o"
-	@echo "... test/test.i"
-	@echo "... test/test.s"
+	@echo "... src/mqtt_client.o"
+	@echo "... src/mqtt_client.i"
+	@echo "... src/mqtt_client.s"
+	@echo "... src/png.o"
+	@echo "... src/png.i"
+	@echo "... src/png.s"
+	@echo "... src/tcp_server.o"
+	@echo "... src/tcp_server.i"
+	@echo "... src/tcp_server.s"
+	@echo "... src/touch.o"
+	@echo "... src/touch.i"
+	@echo "... src/touch.s"
+	@echo "... src/uart_test.o"
+	@echo "... src/uart_test.i"
+	@echo "... src/uart_test.s"
+	@echo "... src/word.o"
+	@echo "... src/word.i"
+	@echo "... src/word.s"
 .PHONY : help
 
 

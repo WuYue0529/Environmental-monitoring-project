@@ -4,8 +4,14 @@
 CMakeFiles/energetic.dir/main.cpp.o: ../inc/at24c08.h
 CMakeFiles/energetic.dir/main.cpp.o: ../inc/common.h
 CMakeFiles/energetic.dir/main.cpp.o: ../inc/ds18b20.h
+CMakeFiles/energetic.dir/main.cpp.o: ../inc/lcd_fb.h
 CMakeFiles/energetic.dir/main.cpp.o: ../inc/led.h
-CMakeFiles/energetic.dir/main.cpp.o: ../test/test.h
+CMakeFiles/energetic.dir/main.cpp.o: ../inc/mqtt_client.h
+CMakeFiles/energetic.dir/main.cpp.o: ../inc/png_mte.h
+CMakeFiles/energetic.dir/main.cpp.o: ../inc/tcp_server.h
+CMakeFiles/energetic.dir/main.cpp.o: ../inc/touch.h
+CMakeFiles/energetic.dir/main.cpp.o: ../inc/uart_test.h
+CMakeFiles/energetic.dir/main.cpp.o: ../inc/word.h
 CMakeFiles/energetic.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/energetic.dir/src/at24c08.cpp.o: ../src/at24c08.cpp
@@ -14,16 +20,47 @@ CMakeFiles/energetic.dir/src/common.cpp.o: ../src/common.cpp
 
 CMakeFiles/energetic.dir/src/ds18b20.cpp.o: ../src/ds18b20.cpp
 
+CMakeFiles/energetic.dir/src/lcd_fb.cpp.o: ../lib/jpeglib/include/jconfig.h
+CMakeFiles/energetic.dir/src/lcd_fb.cpp.o: ../lib/jpeglib/include/jerror.h
+CMakeFiles/energetic.dir/src/lcd_fb.cpp.o: ../lib/jpeglib/include/jmorecfg.h
+CMakeFiles/energetic.dir/src/lcd_fb.cpp.o: ../lib/jpeglib/include/jpeglib.h
+CMakeFiles/energetic.dir/src/lcd_fb.cpp.o: ../src/lcd_fb.cpp
+
 CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/at24c08.h
 CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/common.h
 CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/ds18b20.h
+CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/lcd_fb.h
 CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/led.h
+CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/mqtt_client.h
+CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/png_mte.h
+CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/tcp_server.h
+CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/touch.h
+CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/uart_test.h
+CMakeFiles/energetic.dir/src/led.cpp.o: ../inc/word.h
 CMakeFiles/energetic.dir/src/led.cpp.o: ../src/led.cpp
 
-CMakeFiles/energetic.dir/test/test.cpp.o: ../inc/at24c08.h
-CMakeFiles/energetic.dir/test/test.cpp.o: ../inc/common.h
-CMakeFiles/energetic.dir/test/test.cpp.o: ../inc/ds18b20.h
-CMakeFiles/energetic.dir/test/test.cpp.o: ../inc/led.h
-CMakeFiles/energetic.dir/test/test.cpp.o: ../test/test.cpp
-CMakeFiles/energetic.dir/test/test.cpp.o: ../test/test.h
+CMakeFiles/energetic.dir/src/mqtt_client.cpp.o: ../lib/mqttlib/include/MQTTClient.h
+CMakeFiles/energetic.dir/src/mqtt_client.cpp.o: ../lib/mqttlib/include/MQTTClientPersistence.h
+CMakeFiles/energetic.dir/src/mqtt_client.cpp.o: ../lib/mqttlib/include/MQTTExportDeclarations.h
+CMakeFiles/energetic.dir/src/mqtt_client.cpp.o: ../lib/mqttlib/include/MQTTProperties.h
+CMakeFiles/energetic.dir/src/mqtt_client.cpp.o: ../lib/mqttlib/include/MQTTReasonCodes.h
+CMakeFiles/energetic.dir/src/mqtt_client.cpp.o: ../lib/mqttlib/include/MQTTSubscribeOpts.h
+CMakeFiles/energetic.dir/src/mqtt_client.cpp.o: ../src/mqtt_client.cpp
+
+CMakeFiles/energetic.dir/src/png.cpp.o: ../inc/png_mte.h
+CMakeFiles/energetic.dir/src/png.cpp.o: ../lib/pnglib/include/png.h
+CMakeFiles/energetic.dir/src/png.cpp.o: ../lib/pnglib/include/pngconf.h
+CMakeFiles/energetic.dir/src/png.cpp.o: ../lib/pnglib/include/pnglibconf.h
+CMakeFiles/energetic.dir/src/png.cpp.o: ../src/png.cpp
+
+CMakeFiles/energetic.dir/src/tcp_server.cpp.o: ../src/tcp_server.cpp
+
+CMakeFiles/energetic.dir/src/touch.cpp.o: ../src/touch.cpp
+CMakeFiles/energetic.dir/src/touch.cpp.o: /home/zk/linux/code/tools/tslib/include/tslib.h
+
+CMakeFiles/energetic.dir/src/uart_test.cpp.o: ../src/uart_test.cpp
+
+CMakeFiles/energetic.dir/src/word.cpp.o: ../lib/freetype/include/freetype2/freetype/config/ftheader.h
+CMakeFiles/energetic.dir/src/word.cpp.o: ../lib/freetype/include/freetype2/ft2build.h
+CMakeFiles/energetic.dir/src/word.cpp.o: ../src/word.cpp
 
