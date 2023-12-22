@@ -1,0 +1,1 @@
+cmd_/home/zk/linux/code/driver/rpmsg/rpmsg_client_sample.ko := arm-none-linux-gnueabihf-ld -r  -EL  --build-id  -T ./scripts/module-common.lds -T ./arch/arm/kernel/module.lds -o /home/zk/linux/code/driver/rpmsg/rpmsg_client_sample.ko /home/zk/linux/code/driver/rpmsg/rpmsg_client_sample.o /home/zk/linux/code/driver/rpmsg/rpmsg_client_sample.mod.o;  true

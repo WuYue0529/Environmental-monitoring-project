@@ -29,13 +29,13 @@ int main()
 	hello();
 	// 自检
 
-    // 初始化
-	system("rm -f /home/w25q64/temp_log.txt");
-	system("touch /home/w25q64/temp_log.txt");
-	system("chmod +w /home/w25q64/temp_log.txt");
+    // // 初始化
+	// system("rm -f /home/w25q64/temp_log.txt");
+	// system("touch /home/w25q64/temp_log.txt");
+	// system("chmod +w /home/w25q64/temp_log.txt");
 
-	// 添加任务 
-	pthread_create(&tid, NULL, monitorTemperature, NULL);
+	// // 添加任务 
+	// pthread_create(&tid, NULL, monitorTemperature, NULL);
 
 	// 开始测试
 	// SPIFlash spiFlash("w25q64");
@@ -72,7 +72,9 @@ int main()
     // test_touch();
 	// // idle
     while (1) {
-        sleep(1); // 主线程延迟1秒
+        sleep(60); // 主线程延迟1秒
+        std::cout << "wukongpai running..." << std::endl;
+        fflush(0);
     }
     return 0;
 }
