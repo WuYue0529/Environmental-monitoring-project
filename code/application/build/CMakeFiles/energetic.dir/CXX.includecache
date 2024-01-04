@@ -148,6 +148,8 @@ time.h
 
 ../lib/pnglib/include/pnglibconf.h
 
+../src/atk_mp157/bsp_mp157.h
+
 /home/zk/linux/code/application/main.cpp
 iostream
 -
@@ -165,6 +167,8 @@ thread
 -
 termios.h
 -
+bsp_mp157.h
+/home/zk/linux/code/application/bsp_mp157.h
 
 /home/zk/linux/code/application/src/at24c08.cpp
 stdio.h

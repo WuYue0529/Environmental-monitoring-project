@@ -88,11 +88,11 @@ static ssize_t led_write(struct file *filp, const char __user *buf, size_t cnt, 
 
 	if(user_data[1] == LEDON)
 	{
-		gpio_set_value(mp157led.gpio_led[user_data[0]], 0);
+		gpio_set_value(mp157led.gpio_led[0], 0);
 	}
 	else if(user_data[1] == LEDOFF)
 	{
-		gpio_set_value(mp157led.gpio_led[user_data[0]], 1);
+		gpio_set_value(mp157led.gpio_led[0], 1);
 	}
 	else
 	{
@@ -122,14 +122,14 @@ static int led_probe(struct platform_device *pdev)
     mp157led.gpio_led[0] = of_get_gpio(childled_node, 0);
     printk("led0 gpio : %d \r\n", mp157led.gpio_led[0]);
 
-    childled_node = of_get_next_child(leds_node, childled_node);
-    mp157led.gpio_led[1] = of_get_gpio(childled_node, 0);
-    printk("led1 gpio : %d \r\n", mp157led.gpio_led[1]);
+    // childled_node = of_get_next_child(leds_node, childled_node);
+    // mp157led.gpio_led[1] = of_get_gpio(childled_node, 0);
+    // printk("led1 gpio : %d \r\n", mp157led.gpio_led[1]);
 
     ret = gpio_request_one(mp157led.gpio_led[0], GPIOF_OUT_INIT_LOW, "leds");
-    ret = gpio_request_one(mp157led.gpio_led[1], GPIOF_OUT_INIT_LOW, "leds");
+    // ret = gpio_request_one(mp157led.gpio_led[1], GPIOF_OUT_INIT_LOW, "leds");
     gpio_direction_output(mp157led.gpio_led[0], 1);
-    gpio_direction_output(mp157led.gpio_led[1], 1);
+    // gpio_direction_output(mp157led.gpio_led[1], 1);
 
     alloc_chrdev_region(&mp157led.devid, 0, GPIOLED_CNT, GPIOLED_NAME);
     mp157led.cdev.owner = THIS_MODULE;
@@ -145,9 +145,9 @@ static int led_probe(struct platform_device *pdev)
 static int led_remove(struct platform_device *pdev)
 {
     gpio_set_value(mp157led.gpio_led[0], 1); 	/* 卸载驱动的时候关闭LED */
-    gpio_set_value(mp157led.gpio_led[1], 1); 	/* 卸载驱动的时候关闭LED */
+    // gpio_set_value(mp157led.gpio_led[1], 1); 	/* 卸载驱动的时候关闭LED */
 	gpio_free(mp157led.gpio_led[0]);	/* 注销GPIO */
-	gpio_free(mp157led.gpio_led[1]);	/* 注销GPIO */
+	// gpio_free(mp157led.gpio_led[1]);	/* 注销GPIO */
 
 	cdev_del(&mp157led.cdev);				/*  删除cdev */
 	unregister_chrdev_region(mp157led.devid, GPIOLED_CNT); /* 注销设备号 */

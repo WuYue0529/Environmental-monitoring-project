@@ -36,6 +36,7 @@ int open_device(string device)
     return fd;
 }
 
+// red控制的也是绿灯
 int red_led_off(void)
 {
     int fd = -1;

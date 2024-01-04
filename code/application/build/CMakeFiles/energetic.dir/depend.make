@@ -12,6 +12,7 @@ CMakeFiles/energetic.dir/main.cpp.o: ../inc/tcp_server.h
 CMakeFiles/energetic.dir/main.cpp.o: ../inc/touch.h
 CMakeFiles/energetic.dir/main.cpp.o: ../inc/uart_test.h
 CMakeFiles/energetic.dir/main.cpp.o: ../inc/word.h
+CMakeFiles/energetic.dir/main.cpp.o: ../src/atk_mp157/bsp_mp157.h
 CMakeFiles/energetic.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/energetic.dir/src/at24c08.cpp.o: ../src/at24c08.cpp

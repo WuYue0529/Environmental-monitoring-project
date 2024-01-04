@@ -7,6 +7,8 @@ set(CMAKE_CXX_COMPILER "/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux
 # 添加源文件
 # 收集目录中的文件名并赋值给变量
 aux_source_directory(src DIR_SRCS)
+aux_source_directory(${src}/atk_mp157 DIR_SRCS)
+
 add_executable(energetic main.cpp ${DIR_SRCS})
 
 # 添加头文件路径
@@ -18,6 +20,8 @@ include_directories(lib/pnglib/include)
 include_directories(lib/freetype/include/freetype2)
 include_directories(lib/freetype/include/freetype2/freetype)
 include_directories(lib/mqttlib/include)
+include_directories(src/atk_mp157)
+
 
 find_library(TSLIB_LIB NAMES ts HINTS /home/zk/linux/code/application/lib/tslib/lib)
 find_library(JPEGLIB_LIB NAMES jpeg HINTS /home/zk/linux/code/application/lib/jpeglib/lib)

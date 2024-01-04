@@ -18,62 +18,29 @@ Copyright © ALIENTEK Co., Ltd. 1998-2029. All rights reserved.
 #include <chrono>
 #include <thread>
 #include <termios.h>
-
+#include "bsp_mp157.h"
 
 int main()
 {
-	pthread_t tid;
+	pthread_t tid_gettemp;
+	pthread_t tid_sendtemp;
 	pthread_t tid_mqtt;
+	pthread_t tid_alarm;
+	pthread_t tid_qt;
 
 
 	hello();
+
 	// 自检
 
-    // // 初始化
-	// system("rm -f /home/w25q64/temp_log.txt");
-	// system("touch /home/w25q64/temp_log.txt");
-	// system("chmod +w /home/w25q64/temp_log.txt");
-
-	// // 添加任务 
-	// pthread_create(&tid, NULL, monitorTemperature, NULL);
-
-	// 开始测试
-	// SPIFlash spiFlash("w25q64");
-    // EEPROM eeprom("at24c08");
-    // TemperatureSensor temperatureSensor("ds18b20");
-
-    // 存储测试器件的容器
-    // std::vector<Device*> devices;
-    // devices.push_back(&spiFlash);
-    // devices.push_back(&eeprom);
-    // devices.push_back(&temperatureSensor);
-
-	// int data = 55;
-    // for (auto device : devices) {
-    //     device->resetDevice();
-    //     device->printDeviceInfo();
-    //     device->writeData(&data);
-    //     device->readData(&data);
-    // }
-
-    bool debugRequested = false;
-	// pthread_create(&tid_mqtt, NULL, mqtt_thread, NULL);
-    std::thread myThread(mqtt_thread);  // 创建线程并指定线程函数
+	pthread_create(&tid_mqtt, NULL, BspGetTempM4, NULL);
+    std::thread myThread(BspGetTempM4);  // 创建线程并指定线程函数
     myThread.detach();  // 分离线程，使其在后台运行
-    // tcp_server_test();
 
-    // uart_test();
-    // show_print();
-    // pngshow("/a.png");
-    // jpegshow();
-    // bmpshow();
-    // lcdscreeninfoshow();
-    // lcdscreentest();
-    // test_touch();
-	// // idle
+	// idle
     while (1) {
         sleep(60); // 主线程延迟1秒
-        std::cout << "wukongpai running..." << std::endl;
+        std::cout << "mp157 running..." << std::endl;
         fflush(0);
     }
     return 0;

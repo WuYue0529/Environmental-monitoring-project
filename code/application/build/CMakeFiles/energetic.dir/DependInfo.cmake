@@ -28,6 +28,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../lib/freetype/include/freetype2"
   "../lib/freetype/include/freetype2/freetype"
   "../lib/mqttlib/include"
+  "../src/atk_mp157"
   )
 
 # Targets to which this target links.

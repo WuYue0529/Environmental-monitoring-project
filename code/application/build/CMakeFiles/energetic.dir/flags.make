@@ -6,5 +6,5 @@ CXX_FLAGS =  -O2 -pipe -g -feliminate-unused-debug-types
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/zk/linux/code/application/inc -I/home/zk/linux/code/application/lib/tslib/include -I/home/zk/linux/code/application/lib/jpeglib/include -I/home/zk/linux/code/application/lib/pnglib/include -I/home/zk/linux/code/application/lib/freetype/include/freetype2 -I/home/zk/linux/code/application/lib/freetype/include/freetype2/freetype -I/home/zk/linux/code/application/lib/mqttlib/include 
+CXX_INCLUDES = -I/home/zk/linux/code/application/inc -I/home/zk/linux/code/application/lib/tslib/include -I/home/zk/linux/code/application/lib/jpeglib/include -I/home/zk/linux/code/application/lib/pnglib/include -I/home/zk/linux/code/application/lib/freetype/include/freetype2 -I/home/zk/linux/code/application/lib/freetype/include/freetype2/freetype -I/home/zk/linux/code/application/lib/mqttlib/include -I/home/zk/linux/code/application/src/atk_mp157 
 
