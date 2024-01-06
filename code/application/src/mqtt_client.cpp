@@ -8,6 +8,7 @@
 #include <string>
 #include "MQTTClient.h"		//包含MQTT客户端库头文件
 
+extern int envtemp;
 /* ########################宏定义##################### */
 #define BROKER_ADDRESS	"tcp://91.121.93.94:1883"	//然也物联平台社区版MQTT服务器地址
 
@@ -71,7 +72,7 @@ static void connlost(void *context, char *cause)
 	printf("    cause: %s\n", cause);
 }
 
-int mqtt_thread()
+void mqtt_thread()
 {
 	MQTTClient client;
 	MQTTClient_connectOptions conn_opts = MQTTClient_connectOptions_initializer;
@@ -145,10 +146,12 @@ int mqtt_thread()
 		char temp_str[10] = {0};
 		int fd;
 
-		/* 读取温度值 */
-		fd = open("/sys/class/hwmon/hwmon0/temp1_input", O_RDONLY);
-		read(fd, temp_str, sizeof(temp_str));//读取temp属性文件即可获取温度
-		close(fd);
+		// /* 读取温度值 */
+		// fd = open("/sys/class/hwmon/hwmon0/temp1_input", O_RDONLY);
+		// read(fd, temp_str, sizeof(temp_str));//读取temp属性文件即可获取温度
+		// close(fd);
+
+		sprintf(temp_str, "%d", envtemp);
 
 		/* 发布温度信息 */
 		tempmsg.payload = temp_str;	//消息的内容
@@ -162,7 +165,7 @@ int mqtt_thread()
 			goto unsubscribe_exit;
 		}
 
-		sleep(30);		//每隔30秒 更新一次数据
+		sleep(1);		//每隔30秒 更新一次数据
 	}
 
 unsubscribe_exit:
@@ -180,5 +183,5 @@ disconnect_exit:
 destroy_exit:
 	MQTTClient_destroy(&client);
 exit:
-	return rc;
+	;
 }

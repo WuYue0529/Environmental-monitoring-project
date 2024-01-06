@@ -8,7 +8,9 @@
 #include <linux/i2c-dev.h>
 #include <linux/types.h>
 #include <string.h>
-
+#include <fstream>
+#include <memory>
+#include <iostream>
 
 #define at24c08_dev "/dev/at24c08"
 
@@ -62,3 +64,40 @@ int BspWriteEeprom(int reg, int len, unsigned char *buff)
         return 0;
 }
 
+bool burnBoardInfoToEeprom(void)
+{
+    std::shared_ptr<char> writeinfo;
+    std::shared_ptr<char> readinfo;
+    char str[256] = {0};
+
+    std::ifstream file("/home/w25q64/boardinfo.eep");
+    if(!file.is_open())
+    {
+        std::cerr << "open eep fail" << std::endl;
+        return false;
+    }
+
+    file.seekg(0, std::ios::end);
+    std::streampos fileSize = file.tellg();
+    file.seekg(0, std::ios::beg);
+
+    writeinfo.reset(new char[fileSize]);
+    readinfo.reset(new char[fileSize]);
+
+    file.read(writeinfo.get(), fileSize);
+    file.close();
+
+    BspWriteEeprom(0x40, fileSize, (unsigned char *)writeinfo.get());
+    printf("board info : %s\n", (unsigned char *)writeinfo.get());
+
+    BspReadEeprom(0x40, fileSize, (unsigned char *)str);
+    printf("read info form eeprom: %s\n", str);
+
+    if(0 != memcmp(writeinfo.get(), readinfo.get(), fileSize))
+    {
+        std::cerr << "write eep fail" << std::endl;
+        return false;
+    }
+    printf("eep OK!\n");
+    return true;
+}

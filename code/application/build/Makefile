@@ -285,6 +285,33 @@ src/led.cpp.s:
 	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/led.cpp.s
 .PHONY : src/led.cpp.s
 
+src/led_qt.o: src/led_qt.cpp.o
+
+.PHONY : src/led_qt.o
+
+# target to build an object file
+src/led_qt.cpp.o:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/led_qt.cpp.o
+.PHONY : src/led_qt.cpp.o
+
+src/led_qt.i: src/led_qt.cpp.i
+
+.PHONY : src/led_qt.i
+
+# target to preprocess a source file
+src/led_qt.cpp.i:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/led_qt.cpp.i
+.PHONY : src/led_qt.cpp.i
+
+src/led_qt.s: src/led_qt.cpp.s
+
+.PHONY : src/led_qt.s
+
+# target to generate assembly for a file
+src/led_qt.cpp.s:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/led_qt.cpp.s
+.PHONY : src/led_qt.cpp.s
+
 src/mqtt_client.o: src/mqtt_client.cpp.o
 
 .PHONY : src/mqtt_client.o
@@ -339,6 +366,33 @@ src/png.cpp.s:
 	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/png.cpp.s
 .PHONY : src/png.cpp.s
 
+src/readTemp.o: src/readTemp.cpp.o
+
+.PHONY : src/readTemp.o
+
+# target to build an object file
+src/readTemp.cpp.o:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/readTemp.cpp.o
+.PHONY : src/readTemp.cpp.o
+
+src/readTemp.i: src/readTemp.cpp.i
+
+.PHONY : src/readTemp.i
+
+# target to preprocess a source file
+src/readTemp.cpp.i:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/readTemp.cpp.i
+.PHONY : src/readTemp.cpp.i
+
+src/readTemp.s: src/readTemp.cpp.s
+
+.PHONY : src/readTemp.s
+
+# target to generate assembly for a file
+src/readTemp.cpp.s:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/readTemp.cpp.s
+.PHONY : src/readTemp.cpp.s
+
 src/tcp_server.o: src/tcp_server.cpp.o
 
 .PHONY : src/tcp_server.o
@@ -365,6 +419,60 @@ src/tcp_server.s: src/tcp_server.cpp.s
 src/tcp_server.cpp.s:
 	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/tcp_server.cpp.s
 .PHONY : src/tcp_server.cpp.s
+
+src/tempTCPClient.o: src/tempTCPClient.cpp.o
+
+.PHONY : src/tempTCPClient.o
+
+# target to build an object file
+src/tempTCPClient.cpp.o:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/tempTCPClient.cpp.o
+.PHONY : src/tempTCPClient.cpp.o
+
+src/tempTCPClient.i: src/tempTCPClient.cpp.i
+
+.PHONY : src/tempTCPClient.i
+
+# target to preprocess a source file
+src/tempTCPClient.cpp.i:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/tempTCPClient.cpp.i
+.PHONY : src/tempTCPClient.cpp.i
+
+src/tempTCPClient.s: src/tempTCPClient.cpp.s
+
+.PHONY : src/tempTCPClient.s
+
+# target to generate assembly for a file
+src/tempTCPClient.cpp.s:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/tempTCPClient.cpp.s
+.PHONY : src/tempTCPClient.cpp.s
+
+src/tempTCPService.o: src/tempTCPService.cpp.o
+
+.PHONY : src/tempTCPService.o
+
+# target to build an object file
+src/tempTCPService.cpp.o:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/tempTCPService.cpp.o
+.PHONY : src/tempTCPService.cpp.o
+
+src/tempTCPService.i: src/tempTCPService.cpp.i
+
+.PHONY : src/tempTCPService.i
+
+# target to preprocess a source file
+src/tempTCPService.cpp.i:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/tempTCPService.cpp.i
+.PHONY : src/tempTCPService.cpp.i
+
+src/tempTCPService.s: src/tempTCPService.cpp.s
+
+.PHONY : src/tempTCPService.s
+
+# target to generate assembly for a file
+src/tempTCPService.cpp.s:
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/tempTCPService.cpp.s
+.PHONY : src/tempTCPService.cpp.s
 
 src/touch.o: src/touch.cpp.o
 
@@ -474,15 +582,27 @@ help:
 	@echo "... src/led.o"
 	@echo "... src/led.i"
 	@echo "... src/led.s"
+	@echo "... src/led_qt.o"
+	@echo "... src/led_qt.i"
+	@echo "... src/led_qt.s"
 	@echo "... src/mqtt_client.o"
 	@echo "... src/mqtt_client.i"
 	@echo "... src/mqtt_client.s"
 	@echo "... src/png.o"
 	@echo "... src/png.i"
 	@echo "... src/png.s"
+	@echo "... src/readTemp.o"
+	@echo "... src/readTemp.i"
+	@echo "... src/readTemp.s"
 	@echo "... src/tcp_server.o"
 	@echo "... src/tcp_server.i"
 	@echo "... src/tcp_server.s"
+	@echo "... src/tempTCPClient.o"
+	@echo "... src/tempTCPClient.i"
+	@echo "... src/tempTCPClient.s"
+	@echo "... src/tempTCPService.o"
+	@echo "... src/tempTCPService.i"
+	@echo "... src/tempTCPService.s"
 	@echo "... src/touch.o"
 	@echo "... src/touch.i"
 	@echo "... src/touch.s"

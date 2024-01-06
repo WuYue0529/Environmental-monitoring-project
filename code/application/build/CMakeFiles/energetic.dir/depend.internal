@@ -3,6 +3,7 @@
 
 CMakeFiles/energetic.dir/main.cpp.o
  ../inc/at24c08.h
+ ../inc/bsp_mp157.h
  ../inc/common.h
  ../inc/ds18b20.h
  ../inc/lcd_fb.h
@@ -13,7 +14,6 @@ CMakeFiles/energetic.dir/main.cpp.o
  ../inc/touch.h
  ../inc/uart_test.h
  ../inc/word.h
- ../src/atk_mp157/bsp_mp157.h
  /home/zk/linux/code/application/main.cpp
 CMakeFiles/energetic.dir/src/at24c08.cpp.o
  /home/zk/linux/code/application/src/at24c08.cpp
@@ -40,6 +40,20 @@ CMakeFiles/energetic.dir/src/led.cpp.o
  ../inc/uart_test.h
  ../inc/word.h
  /home/zk/linux/code/application/src/led.cpp
+CMakeFiles/energetic.dir/src/led_qt.cpp.o
+ ../inc/at24c08.h
+ ../inc/bsp_mp157.h
+ ../inc/common.h
+ ../inc/ds18b20.h
+ ../inc/lcd_fb.h
+ ../inc/led.h
+ ../inc/mqtt_client.h
+ ../inc/png_mte.h
+ ../inc/tcp_server.h
+ ../inc/touch.h
+ ../inc/uart_test.h
+ ../inc/word.h
+ /home/zk/linux/code/application/src/led_qt.cpp
 CMakeFiles/energetic.dir/src/mqtt_client.cpp.o
  ../lib/mqttlib/include/MQTTClient.h
  ../lib/mqttlib/include/MQTTClientPersistence.h
@@ -54,8 +68,16 @@ CMakeFiles/energetic.dir/src/png.cpp.o
  ../lib/pnglib/include/pngconf.h
  ../lib/pnglib/include/pnglibconf.h
  /home/zk/linux/code/application/src/png.cpp
+CMakeFiles/energetic.dir/src/readTemp.cpp.o
+ ../inc/bsp_mp157.h
+ /home/zk/linux/code/application/src/readTemp.cpp
 CMakeFiles/energetic.dir/src/tcp_server.cpp.o
  /home/zk/linux/code/application/src/tcp_server.cpp
+CMakeFiles/energetic.dir/src/tempTCPClient.cpp.o
+ /home/zk/linux/code/application/src/tempTCPClient.cpp
+CMakeFiles/energetic.dir/src/tempTCPService.cpp.o
+ ../inc/bsp_mp157.h
+ /home/zk/linux/code/application/src/tempTCPService.cpp
 CMakeFiles/energetic.dir/src/touch.cpp.o
  /home/zk/linux/code/application/src/touch.cpp
  /home/zk/linux/code/tools/tslib/include/tslib.h

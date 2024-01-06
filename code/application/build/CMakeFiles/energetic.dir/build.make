@@ -201,9 +201,33 @@ CMakeFiles/energetic.dir/src/led.cpp.o.provides: CMakeFiles/energetic.dir/src/le
 CMakeFiles/energetic.dir/src/led.cpp.o.provides.build: CMakeFiles/energetic.dir/src/led.cpp.o
 
 
+CMakeFiles/energetic.dir/src/led_qt.cpp.o: CMakeFiles/energetic.dir/flags.make
+CMakeFiles/energetic.dir/src/led_qt.cpp.o: ../src/led_qt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/energetic.dir/src/led_qt.cpp.o"
+	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/energetic.dir/src/led_qt.cpp.o -c /home/zk/linux/code/application/src/led_qt.cpp
+
+CMakeFiles/energetic.dir/src/led_qt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/energetic.dir/src/led_qt.cpp.i"
+	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zk/linux/code/application/src/led_qt.cpp > CMakeFiles/energetic.dir/src/led_qt.cpp.i
+
+CMakeFiles/energetic.dir/src/led_qt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/energetic.dir/src/led_qt.cpp.s"
+	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zk/linux/code/application/src/led_qt.cpp -o CMakeFiles/energetic.dir/src/led_qt.cpp.s
+
+CMakeFiles/energetic.dir/src/led_qt.cpp.o.requires:
+
+.PHONY : CMakeFiles/energetic.dir/src/led_qt.cpp.o.requires
+
+CMakeFiles/energetic.dir/src/led_qt.cpp.o.provides: CMakeFiles/energetic.dir/src/led_qt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/led_qt.cpp.o.provides.build
+.PHONY : CMakeFiles/energetic.dir/src/led_qt.cpp.o.provides
+
+CMakeFiles/energetic.dir/src/led_qt.cpp.o.provides.build: CMakeFiles/energetic.dir/src/led_qt.cpp.o
+
+
 CMakeFiles/energetic.dir/src/mqtt_client.cpp.o: CMakeFiles/energetic.dir/flags.make
 CMakeFiles/energetic.dir/src/mqtt_client.cpp.o: ../src/mqtt_client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/energetic.dir/src/mqtt_client.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/energetic.dir/src/mqtt_client.cpp.o"
 	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/energetic.dir/src/mqtt_client.cpp.o -c /home/zk/linux/code/application/src/mqtt_client.cpp
 
 CMakeFiles/energetic.dir/src/mqtt_client.cpp.i: cmake_force
@@ -227,7 +251,7 @@ CMakeFiles/energetic.dir/src/mqtt_client.cpp.o.provides.build: CMakeFiles/energe
 
 CMakeFiles/energetic.dir/src/png.cpp.o: CMakeFiles/energetic.dir/flags.make
 CMakeFiles/energetic.dir/src/png.cpp.o: ../src/png.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/energetic.dir/src/png.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/energetic.dir/src/png.cpp.o"
 	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/energetic.dir/src/png.cpp.o -c /home/zk/linux/code/application/src/png.cpp
 
 CMakeFiles/energetic.dir/src/png.cpp.i: cmake_force
@@ -249,9 +273,33 @@ CMakeFiles/energetic.dir/src/png.cpp.o.provides: CMakeFiles/energetic.dir/src/pn
 CMakeFiles/energetic.dir/src/png.cpp.o.provides.build: CMakeFiles/energetic.dir/src/png.cpp.o
 
 
+CMakeFiles/energetic.dir/src/readTemp.cpp.o: CMakeFiles/energetic.dir/flags.make
+CMakeFiles/energetic.dir/src/readTemp.cpp.o: ../src/readTemp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/energetic.dir/src/readTemp.cpp.o"
+	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/energetic.dir/src/readTemp.cpp.o -c /home/zk/linux/code/application/src/readTemp.cpp
+
+CMakeFiles/energetic.dir/src/readTemp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/energetic.dir/src/readTemp.cpp.i"
+	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zk/linux/code/application/src/readTemp.cpp > CMakeFiles/energetic.dir/src/readTemp.cpp.i
+
+CMakeFiles/energetic.dir/src/readTemp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/energetic.dir/src/readTemp.cpp.s"
+	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zk/linux/code/application/src/readTemp.cpp -o CMakeFiles/energetic.dir/src/readTemp.cpp.s
+
+CMakeFiles/energetic.dir/src/readTemp.cpp.o.requires:
+
+.PHONY : CMakeFiles/energetic.dir/src/readTemp.cpp.o.requires
+
+CMakeFiles/energetic.dir/src/readTemp.cpp.o.provides: CMakeFiles/energetic.dir/src/readTemp.cpp.o.requires
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/readTemp.cpp.o.provides.build
+.PHONY : CMakeFiles/energetic.dir/src/readTemp.cpp.o.provides
+
+CMakeFiles/energetic.dir/src/readTemp.cpp.o.provides.build: CMakeFiles/energetic.dir/src/readTemp.cpp.o
+
+
 CMakeFiles/energetic.dir/src/tcp_server.cpp.o: CMakeFiles/energetic.dir/flags.make
 CMakeFiles/energetic.dir/src/tcp_server.cpp.o: ../src/tcp_server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/energetic.dir/src/tcp_server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/energetic.dir/src/tcp_server.cpp.o"
 	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/energetic.dir/src/tcp_server.cpp.o -c /home/zk/linux/code/application/src/tcp_server.cpp
 
 CMakeFiles/energetic.dir/src/tcp_server.cpp.i: cmake_force
@@ -273,9 +321,57 @@ CMakeFiles/energetic.dir/src/tcp_server.cpp.o.provides: CMakeFiles/energetic.dir
 CMakeFiles/energetic.dir/src/tcp_server.cpp.o.provides.build: CMakeFiles/energetic.dir/src/tcp_server.cpp.o
 
 
+CMakeFiles/energetic.dir/src/tempTCPClient.cpp.o: CMakeFiles/energetic.dir/flags.make
+CMakeFiles/energetic.dir/src/tempTCPClient.cpp.o: ../src/tempTCPClient.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/energetic.dir/src/tempTCPClient.cpp.o"
+	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/energetic.dir/src/tempTCPClient.cpp.o -c /home/zk/linux/code/application/src/tempTCPClient.cpp
+
+CMakeFiles/energetic.dir/src/tempTCPClient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/energetic.dir/src/tempTCPClient.cpp.i"
+	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zk/linux/code/application/src/tempTCPClient.cpp > CMakeFiles/energetic.dir/src/tempTCPClient.cpp.i
+
+CMakeFiles/energetic.dir/src/tempTCPClient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/energetic.dir/src/tempTCPClient.cpp.s"
+	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zk/linux/code/application/src/tempTCPClient.cpp -o CMakeFiles/energetic.dir/src/tempTCPClient.cpp.s
+
+CMakeFiles/energetic.dir/src/tempTCPClient.cpp.o.requires:
+
+.PHONY : CMakeFiles/energetic.dir/src/tempTCPClient.cpp.o.requires
+
+CMakeFiles/energetic.dir/src/tempTCPClient.cpp.o.provides: CMakeFiles/energetic.dir/src/tempTCPClient.cpp.o.requires
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/tempTCPClient.cpp.o.provides.build
+.PHONY : CMakeFiles/energetic.dir/src/tempTCPClient.cpp.o.provides
+
+CMakeFiles/energetic.dir/src/tempTCPClient.cpp.o.provides.build: CMakeFiles/energetic.dir/src/tempTCPClient.cpp.o
+
+
+CMakeFiles/energetic.dir/src/tempTCPService.cpp.o: CMakeFiles/energetic.dir/flags.make
+CMakeFiles/energetic.dir/src/tempTCPService.cpp.o: ../src/tempTCPService.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/energetic.dir/src/tempTCPService.cpp.o"
+	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/energetic.dir/src/tempTCPService.cpp.o -c /home/zk/linux/code/application/src/tempTCPService.cpp
+
+CMakeFiles/energetic.dir/src/tempTCPService.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/energetic.dir/src/tempTCPService.cpp.i"
+	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zk/linux/code/application/src/tempTCPService.cpp > CMakeFiles/energetic.dir/src/tempTCPService.cpp.i
+
+CMakeFiles/energetic.dir/src/tempTCPService.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/energetic.dir/src/tempTCPService.cpp.s"
+	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zk/linux/code/application/src/tempTCPService.cpp -o CMakeFiles/energetic.dir/src/tempTCPService.cpp.s
+
+CMakeFiles/energetic.dir/src/tempTCPService.cpp.o.requires:
+
+.PHONY : CMakeFiles/energetic.dir/src/tempTCPService.cpp.o.requires
+
+CMakeFiles/energetic.dir/src/tempTCPService.cpp.o.provides: CMakeFiles/energetic.dir/src/tempTCPService.cpp.o.requires
+	$(MAKE) -f CMakeFiles/energetic.dir/build.make CMakeFiles/energetic.dir/src/tempTCPService.cpp.o.provides.build
+.PHONY : CMakeFiles/energetic.dir/src/tempTCPService.cpp.o.provides
+
+CMakeFiles/energetic.dir/src/tempTCPService.cpp.o.provides.build: CMakeFiles/energetic.dir/src/tempTCPService.cpp.o
+
+
 CMakeFiles/energetic.dir/src/touch.cpp.o: CMakeFiles/energetic.dir/flags.make
 CMakeFiles/energetic.dir/src/touch.cpp.o: ../src/touch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/energetic.dir/src/touch.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/energetic.dir/src/touch.cpp.o"
 	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/energetic.dir/src/touch.cpp.o -c /home/zk/linux/code/application/src/touch.cpp
 
 CMakeFiles/energetic.dir/src/touch.cpp.i: cmake_force
@@ -299,7 +395,7 @@ CMakeFiles/energetic.dir/src/touch.cpp.o.provides.build: CMakeFiles/energetic.di
 
 CMakeFiles/energetic.dir/src/uart_test.cpp.o: CMakeFiles/energetic.dir/flags.make
 CMakeFiles/energetic.dir/src/uart_test.cpp.o: ../src/uart_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/energetic.dir/src/uart_test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/energetic.dir/src/uart_test.cpp.o"
 	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/energetic.dir/src/uart_test.cpp.o -c /home/zk/linux/code/application/src/uart_test.cpp
 
 CMakeFiles/energetic.dir/src/uart_test.cpp.i: cmake_force
@@ -323,7 +419,7 @@ CMakeFiles/energetic.dir/src/uart_test.cpp.o.provides.build: CMakeFiles/energeti
 
 CMakeFiles/energetic.dir/src/word.cpp.o: CMakeFiles/energetic.dir/flags.make
 CMakeFiles/energetic.dir/src/word.cpp.o: ../src/word.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/energetic.dir/src/word.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/energetic.dir/src/word.cpp.o"
 	/usr/local/arm/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/energetic.dir/src/word.cpp.o -c /home/zk/linux/code/application/src/word.cpp
 
 CMakeFiles/energetic.dir/src/word.cpp.i: cmake_force
@@ -353,9 +449,13 @@ energetic_OBJECTS = \
 "CMakeFiles/energetic.dir/src/ds18b20.cpp.o" \
 "CMakeFiles/energetic.dir/src/lcd_fb.cpp.o" \
 "CMakeFiles/energetic.dir/src/led.cpp.o" \
+"CMakeFiles/energetic.dir/src/led_qt.cpp.o" \
 "CMakeFiles/energetic.dir/src/mqtt_client.cpp.o" \
 "CMakeFiles/energetic.dir/src/png.cpp.o" \
+"CMakeFiles/energetic.dir/src/readTemp.cpp.o" \
 "CMakeFiles/energetic.dir/src/tcp_server.cpp.o" \
+"CMakeFiles/energetic.dir/src/tempTCPClient.cpp.o" \
+"CMakeFiles/energetic.dir/src/tempTCPService.cpp.o" \
 "CMakeFiles/energetic.dir/src/touch.cpp.o" \
 "CMakeFiles/energetic.dir/src/uart_test.cpp.o" \
 "CMakeFiles/energetic.dir/src/word.cpp.o"
@@ -369,9 +469,13 @@ energetic: CMakeFiles/energetic.dir/src/common.cpp.o
 energetic: CMakeFiles/energetic.dir/src/ds18b20.cpp.o
 energetic: CMakeFiles/energetic.dir/src/lcd_fb.cpp.o
 energetic: CMakeFiles/energetic.dir/src/led.cpp.o
+energetic: CMakeFiles/energetic.dir/src/led_qt.cpp.o
 energetic: CMakeFiles/energetic.dir/src/mqtt_client.cpp.o
 energetic: CMakeFiles/energetic.dir/src/png.cpp.o
+energetic: CMakeFiles/energetic.dir/src/readTemp.cpp.o
 energetic: CMakeFiles/energetic.dir/src/tcp_server.cpp.o
+energetic: CMakeFiles/energetic.dir/src/tempTCPClient.cpp.o
+energetic: CMakeFiles/energetic.dir/src/tempTCPService.cpp.o
 energetic: CMakeFiles/energetic.dir/src/touch.cpp.o
 energetic: CMakeFiles/energetic.dir/src/uart_test.cpp.o
 energetic: CMakeFiles/energetic.dir/src/word.cpp.o
@@ -383,7 +487,7 @@ energetic: /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-l
 energetic: /opt/st/stm32mp1/3.1-snapshot/sysroots/cortexa7t2hf-neon-vfpv4-ostl-linux-gnueabi/usr/lib/libfreetype.so
 energetic: ../lib/mqttlib/lib/libpaho-mqtt3c.so
 energetic: CMakeFiles/energetic.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable energetic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zk/linux/code/application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable energetic"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/energetic.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -397,9 +501,13 @@ CMakeFiles/energetic.dir/requires: CMakeFiles/energetic.dir/src/common.cpp.o.req
 CMakeFiles/energetic.dir/requires: CMakeFiles/energetic.dir/src/ds18b20.cpp.o.requires
 CMakeFiles/energetic.dir/requires: CMakeFiles/energetic.dir/src/lcd_fb.cpp.o.requires
 CMakeFiles/energetic.dir/requires: CMakeFiles/energetic.dir/src/led.cpp.o.requires
+CMakeFiles/energetic.dir/requires: CMakeFiles/energetic.dir/src/led_qt.cpp.o.requires
 CMakeFiles/energetic.dir/requires: CMakeFiles/energetic.dir/src/mqtt_client.cpp.o.requires
 CMakeFiles/energetic.dir/requires: CMakeFiles/energetic.dir/src/png.cpp.o.requires
+CMakeFiles/energetic.dir/requires: CMakeFiles/energetic.dir/src/readTemp.cpp.o.requires
 CMakeFiles/energetic.dir/requires: CMakeFiles/energetic.dir/src/tcp_server.cpp.o.requires
+CMakeFiles/energetic.dir/requires: CMakeFiles/energetic.dir/src/tempTCPClient.cpp.o.requires
+CMakeFiles/energetic.dir/requires: CMakeFiles/energetic.dir/src/tempTCPService.cpp.o.requires
 CMakeFiles/energetic.dir/requires: CMakeFiles/energetic.dir/src/touch.cpp.o.requires
 CMakeFiles/energetic.dir/requires: CMakeFiles/energetic.dir/src/uart_test.cpp.o.requires
 CMakeFiles/energetic.dir/requires: CMakeFiles/energetic.dir/src/word.cpp.o.requires
